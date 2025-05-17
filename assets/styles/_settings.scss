@@ -1,0 +1,48 @@
+/* -------------------------------------------------------------------------- */
+/*                        Réglages de base et généraux                        */
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------------- Import des fonts ---------------------------- */
+@font-face {
+  font-family: "Nom-police";
+  src: url(../chemin/vers/la/font.ttf);
+  font-display: swap; //Pour éviter les décalages de mise en page
+}
+
+/* --------------------------- Variables et mixins -------------------------- */
+//1 Variables
+$font: "Nom-police", serif;
+$white: white;
+$black: black;
+
+//1 Mixins
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------- Réglages généraux --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  background: red;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  color: $black;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                      Réglages size : fluid responsive                      */
+/* -------------------------------------------------------------------------- */

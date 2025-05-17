@@ -1,0 +1,21 @@
+nav {
+  width: 100%;
+  padding: 10px;
+  @include alignChildren(space-between);
+  /* --------------------------------- NAVBAR --------------------------------- */
+  .navbar {
+    width: 70%;
+    li a {
+      font-family: $medium;
+      color: $white;
+      text-transform: uppercase;
+      //*Fluid Responsive font-size
+      font-size: clamp(11.2px, calc(0.7rem + ((1vw - 7.7px) * 0.7442)), 14.4px);
+      min-height: 0vw;
+    }
+    //*Tablette et mobile :
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
+  }
+}

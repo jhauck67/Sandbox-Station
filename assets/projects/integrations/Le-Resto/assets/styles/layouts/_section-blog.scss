@@ -1,0 +1,178 @@
+section#blog {
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
+  .blog-container {
+    @include maxWidth;
+    margin: 40px auto;
+    padding: 20px 0;
+    .container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "hor1 squ"
+        "hor2 squ";
+      .event1 {
+        grid-area: hor1;
+        .img-container {
+          background: url(../img/section4-image1.webp) center/cover;
+        }
+      }
+      .event2 {
+        grid-area: hor2;
+        .img-container {
+          background: url(../img/section4-image2.webp) center/cover;
+        }
+      }
+      .event3 {
+        grid-area: squ;
+      }
+      .horizon {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .img-container {
+          @include centerChild;
+          .date-container {
+            margin: 50px 0;
+            background: $grey1;
+            color: $white;
+            height: 100px;
+            width: 100px;
+            @include centerChild;
+            p {
+              font-size: 1rem;
+              span {
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .article-container {
+          @include centerChild;
+          background: $white;
+          text-align: left;
+          .titre {
+            font-size: clamp(
+              0.9rem,
+              calc(0.9rem + ((1vw - 0.48125rem) * 1.1163)),
+              1.2rem
+            );
+            min-height: 0vw;
+            color: $black;
+            padding: 0;
+          }
+          .description {
+            font-size: clamp(
+              0.7rem,
+              calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+              1rem
+            );
+            min-height: 0vw;
+            color: $grey2;
+            padding: 15px 0;
+            svg {
+              height: clamp(
+                0.7rem,
+                calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+                1rem
+              );
+              min-height: 0vw;
+              width: auto;
+              fill: $grey2;
+            }
+          }
+          a {
+            font-family: $medium;
+            text-transform: uppercase;
+            font-size: clamp(
+              0.7rem,
+              calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+              1rem
+            );
+            min-height: 0vw;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      .square {
+        background: url(../img/section4-image3.webp) center/cover;
+        padding: 25px;
+        @include centerChild;
+        .article-container {
+          width: 100%;
+          height: 100%;
+          background: $white;
+          .date-container {
+            background: $grey1;
+            color: $white;
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            @include centerChild;
+            p {
+              font-size: 1rem;
+              span {
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+          .titre {
+            font-size: clamp(
+              0.9rem,
+              calc(0.9rem + ((1vw - 0.48125rem) * 1.1163)),
+              1.2rem
+            );
+            min-height: 0vw;
+            color: $black;
+            padding: 0;
+            margin-top: 50px;
+          }
+          .description {
+            font-size: clamp(
+              0.7rem,
+              calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+              1rem
+            );
+            min-height: 0vw;
+            color: $grey2;
+            padding: 15px 0;
+            margin-bottom: 35px;
+            svg {
+              height: clamp(
+                0.7rem,
+                calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+                1rem
+              );
+              min-height: 0vw;
+              width: auto;
+              fill: $grey2;
+            }
+          }
+          a {
+            font-family: $medium;
+            text-transform: uppercase;
+            font-size: clamp(
+              0.7rem,
+              calc(0.7rem + ((1vw - 0.48125rem) * 1.1163)),
+              1rem
+            );
+            min-height: 0vw;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

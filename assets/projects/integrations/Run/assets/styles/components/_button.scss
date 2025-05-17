@@ -1,0 +1,20 @@
+.button {
+  border: 1px solid $border;
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin: 20px 0;
+  font-family: $paragraphe;
+  color: black;
+  text-transform: uppercase;
+  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.1875rem) * 0.6809)), 0.9rem);
+  min-height: 0vw;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  &:hover {
+    border-color: $color;
+    color: $color;
+    svg {
+      fill: $color;
+    }
+  }
+}

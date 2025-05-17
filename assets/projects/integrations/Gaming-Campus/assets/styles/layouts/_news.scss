@@ -1,0 +1,136 @@
+.news {
+  padding: 60px 0;
+  background: $grey2;
+  .news-container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    .news-title {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: center;
+      justify-items: left;
+      @media screen and (max-width: 905px) {
+        display: block;
+        justify-items: center;
+      }
+      .news-title-left {
+        h2 {
+          display: flex;
+          justify-content: start;
+          @include title;
+          font-weight: 500;
+          font-size: 1.8rem;
+          @media screen and (max-width: 905px) {
+            justify-content: center;
+            @include h2-news-police-mobile;
+          }
+        }
+        p {
+          display: flex;
+          justify-content: start;
+          font-weight: 600;
+          @include p-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include p-police-mobile;
+          }
+
+          padding: 15px 0;
+        }
+      }
+      .news-title-right {
+        .button {
+          border-color: $black;
+          &:hover {
+            background: $black-button;
+            a {
+              color: $white;
+              svg {
+                fill: $white;
+              }
+            }
+          }
+          a {
+            color: $black;
+            svg {
+              fill: $black;
+            }
+          }
+        }
+      }
+    }
+    .news-main {
+      padding: 0 10px;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-items: start;
+      justify-content: space-between;
+      @media screen and (max-width: 905px) {
+        display: block;
+      }
+
+      position: relative;
+      .news-card {
+        width: 100%;
+        padding: 30px;
+        .news-img-container {
+          width: 100%;
+          @media screen and (max-width: 905px) {
+            width: 50%;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            box-shadow: 2px 2px 4px 1px #0000004a;
+          }
+        }
+        h3 {
+          display: flex;
+          text-align: left;
+          width: 100%;
+          padding: 10px 0;
+          font-weight: 700;
+          @include h3-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include h3-police-mobile;
+          }
+        }
+        p {
+          display: flex;
+          text-align: left;
+          width: 100%;
+          font-weight: 600;
+          line-height: 20px;
+          padding-bottom: 10px;
+          @include p-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include p-police-mobile;
+          }
+        }
+        .button {
+          display: flex;
+          text-align: left;
+          padding: 0;
+          position: absolute;
+          bottom: 0;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.05);
+          }
+          @media screen and (max-width: 905px) {
+            position: relative;
+          }
+          border: none;
+          a {
+            color: $color;
+            svg {
+              fill: $color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+// Import des Fonts
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
+}
+
+// Variables
+$font: "Montserrat", sans-serif;
+$white: #ffffff;
+$black: #000000;
+$color: #5f04aa;
+$grey1: #e0e0e0;
+$grey2: #f7f7f7;
+$white-button: #f5f5f5bf;
+$black-button: #000000c2;
+
+// Mixins
+@mixin title {
+  text-transform: uppercase;
+}
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Réglages généraux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: $font;
+  color: $black;
+}
+body {
+  min-height: 100dvh;
+  background: $white;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+// Réglages tailles de police
+//* Réglages pour la navbar (de 0.8 à 0.7rem)
+@mixin navbar-police {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(
+    0.7rem,
+    calc(0.7rem + ((1vw - 0.571875rem) * 0.3048)),
+    0.8rem
+  );
+  min-height: 0vw;
+}
+
+//* Réglages pour le H1
+@mixin h1-police-desktop {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.48125rem) * 0.7164)), 1.3rem);
+  min-height: 0vw;
+}
+@mixin h1-police-mobile {
+  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.2rem) * 1.7778)), 1.2rem);
+  min-height: 0vw;
+}
+
+//* Réglages pour le H2
+@mixin h2-police-desktop {
+  font-size: clamp(
+    0.9rem,
+    calc(0.9rem + ((1vw - 0.48125rem) * 0.7164)),
+    1.2rem
+  );
+  min-height: 0vw;
+}
+@mixin h2-police-mobile {
+  font-size: clamp(11.2px, calc(0.7rem + ((1vw - 3.2px) * 0.7111)), 14.4px);
+  min-height: 0vw;
+}
+@mixin h2-news-police-mobile {
+  font-size: clamp(1.3rem, calc(1.3rem + ((1vw - 0.2rem) * 1.3675)), 1.8rem);
+  min-height: 0vw;
+}
+
+//* Réglages pour le H3
+@mixin h3-police-desktop {
+  font-size: clamp(
+    0.9rem,
+    calc(0.9rem + ((1vw - 0.48125rem) * 0.7164)),
+    1.2rem
+  );
+  min-height: 0vw;
+}
+@mixin h3-police-mobile {
+  font-size: clamp(0.9rem, calc(0.9rem + ((1vw - 0.2rem) * 1.0667)), 1.2rem);
+  min-height: 0vw;
+}
+
+//* Réglages des polices pour le bouton
+@mixin button-police-desktop {
+  font-size: clamp(0.8rem, calc(0.8rem + ((1vw - 0.48125rem) * 0.4776)), 1rem);
+  min-height: 0vw;
+}
+@mixin button-police-mobile {
+  font-size: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 1.0667)), 0.8rem);
+  min-height: 0vw;
+}
+
+//* Réglages des polices pour le chevron
+@mixin svg-police-mobile {
+  height: clamp(8px, calc(0.5rem + ((1vw - 3.2px) * 1.1111)), 13px);
+  min-height: 0vw;
+  width: clamp(5px, calc(0.3125rem + ((1vw - 3.2px) * 0.6667)), 8px);
+}
+
+//* Réglages des polices pour les paragraphes
+@mixin p-police-desktop {
+  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.48125rem) * 0.7164)), 1rem);
+  min-height: 0vw;
+}
+@mixin p-police-mobile {
+  font-size: clamp(0.7rem, calc(0.7rem + ((1vw - 0.2rem) * 1.0667)), 1rem);
+  min-height: 0vw;
+}

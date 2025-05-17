@@ -1,0 +1,59 @@
+main {
+  width: 100%;
+  @include maxWidth;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  position: relative !important;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: $shadow;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section {
+    box-shadow: inset -1px 1px 0 $shadow;
+  }
+  .section {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    @media screen and (max-width: 720px) {
+      display: block;
+      height: 100%;
+      padding: 50px 0;
+    }
+
+    align-items: center;
+    .img-container,
+    .text-container {
+      height: 100%;
+      width: 100%;
+      @include centerChild;
+    }
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .img-container {
+      @media screen and (max-width: 720px) {
+        display: none;
+      }
+    }
+  }
+  .section1 {
+    grid-template-columns: 40% 60%;
+    .section1-left {
+      background: url(../img/running-man-forest-920px.webp) center/cover;
+    }
+  }
+  .section2 {
+    grid-template-columns: 65% 35%;
+    .section2-right {
+      background: url(../img/running-couple-bridge920px.webp) center/cover;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.form {
+  h2 {
+    text-align: center;
+    padding-top: 50px;
+  }
+  form {
+    width: 60%;
+    @media screen and (max-width: 770px) {
+      width: 85%;
+    }
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 1fr 20%;
+    grid-template-areas:
+      "name mail"
+      "mess mess"
+      "button button";
+    label {
+      display: block;
+      text-align: center;
+      padding: 20px 0 10px;
+      font-size: clamp(
+        0.7rem,
+        calc(0.7rem + ((1vw - 0.1875rem) * 0.6809)),
+        0.9rem
+      );
+    }
+    #name,
+    #email,
+    textarea {
+      display: block;
+      width: 100%;
+      border: 1px solid $border;
+      border-radius: 5px;
+      outline: none;
+      background: transparent;
+      &:hover {
+        border-color: $color;
+      }
+      &:focus {
+        border: 2px solid $color;
+      }
+    }
+    #name,
+    #email {
+      height: 30px;
+    }
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    .name-container {
+      grid-area: name;
+      padding: 0 10px;
+    }
+    .email-container {
+      grid-area: mail;
+      padding: 0 10px;
+    }
+    .message-container {
+      grid-area: mess;
+      padding: 0 10px;
+    }
+    .button-container {
+      grid-area: button;
+      padding: 0 10px;
+      text-align: center;
+      .button {
+        background: transparent;
+      }
+    }
+  }
+}

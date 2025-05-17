@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* ---------------------- Liens vers les pages à relier --------------------- */
+/* -------------------------------------------------------------------------- */
+/*                        Réglages de base et généraux                        */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- Import des fonts ---------------------------- */
+@font-face {
+  font-family: "Inter-Thin";
+  src: url(../fonts/Inter_24pt-Thin.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url(../fonts/Inter_24pt-Light.ttf);
+  font-display: swap;
+}
+/* --------------------------- Variables et mixins -------------------------- */
+/* ---------------------------- Réglages généraux --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  min-height: 100svh;
+  min-height: 100vh;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: "Inter-Thin", sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(2rem, 2rem + (1vw - 0.1875rem) * 1.7021, 2.5rem);
+  min-height: 0vw;
+}
+
+h2 {
+  font-size: clamp(1.3rem, 1.3rem + (1vw - 0.1875rem) * 0.6809, 1.5rem);
+  min-height: 0vw;
+}
+
+p,
+label {
+  font-family: "Inter-Light", sans-serif;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.1875rem) * 1.0213, 1rem);
+  min-height: 0vw;
+  line-height: clamp(20px, 1.25rem + (1vw - 3px) * 2.1277, 30px);
+}
+
+p {
+  padding: 25px 0 40px;
+}
+
+a,
+a:visited {
+  color: #262021;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 720px) {
+  header {
+    display: block;
+  }
+}
+header .header-text {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 720px) {
+  header .header-text {
+    width: 85%;
+    height: 50vh;
+  }
+}
+header .header-image {
+  background: url(../img/banner-1440px.webp) right/cover;
+}
+@media screen and (max-width: 720px) {
+  header .header-image {
+    height: 50vh;
+    background: url(../img/banner-770px.webp) center/cover;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .header-image {
+    height: 50vh;
+    background: url(../img/banner-600px.webp) center/cover;
+  }
+}
+
+.button {
+  border: 1px solid rgba(39, 32, 34, 0.2509803922);
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin: 20px 0;
+  font-family: "Inter-Light", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.1875rem) * 0.6809, 0.9rem);
+  min-height: 0vw;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.button:hover {
+  border-color: #048abf;
+  color: #048abf;
+}
+.button:hover svg {
+  fill: #048abf;
+}
+
+main {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  position: relative !important;
+}
+main::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: rgba(39, 32, 34, 0.1019607843);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+main section {
+  -webkit-box-shadow: inset -1px 1px 0 rgba(39, 32, 34, 0.1019607843);
+          box-shadow: inset -1px 1px 0 rgba(39, 32, 34, 0.1019607843);
+}
+main .section {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 720px) {
+  main .section {
+    display: block;
+    height: 100%;
+    padding: 50px 0;
+  }
+}
+main .section .img-container,
+main .section .text-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .section .container {
+  width: 85%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 720px) {
+  main .section .img-container {
+    display: none;
+  }
+}
+main .section1 {
+  grid-template-columns: 40% 60%;
+}
+main .section1 .section1-left {
+  background: url(../img/running-man-forest-920px.webp) center/cover;
+}
+main .section2 {
+  grid-template-columns: 65% 35%;
+}
+main .section2 .section2-right {
+  background: url(../img/running-couple-bridge920px.webp) center/cover;
+}
+
+.form h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+.form form {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% 1fr 20%;
+  grid-template-areas: "name mail" "mess mess" "button button";
+}
+@media screen and (max-width: 770px) {
+  .form form {
+    width: 85%;
+  }
+}
+.form form label {
+  display: block;
+  text-align: center;
+  padding: 20px 0 10px;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.1875rem) * 0.6809, 0.9rem);
+}
+.form form #name,
+.form form #email,
+.form form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(39, 32, 34, 0.2509803922);
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+.form form #name:hover,
+.form form #email:hover,
+.form form textarea:hover {
+  border-color: #048abf;
+}
+.form form #name:focus,
+.form form #email:focus,
+.form form textarea:focus {
+  border: 2px solid #048abf;
+}
+.form form #name,
+.form form #email {
+  height: 30px;
+}
+.form form textarea {
+  resize: none;
+  height: 150px;
+}
+.form form .name-container {
+  grid-area: name;
+  padding: 0 10px;
+}
+.form form .email-container {
+  grid-area: mail;
+  padding: 0 10px;
+}
+.form form .message-container {
+  grid-area: mess;
+  padding: 0 10px;
+}
+.form form .button-container {
+  grid-area: button;
+  padding: 0 10px;
+  text-align: center;
+}
+.form form .button-container .button {
+  background: transparent;
+}
+
+footer {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+footer .networks-container {
+  padding: 50px 0;
+}
+footer .networks-container ul {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  footer .networks-container ul {
+    width: 75%;
+  }
+}
+footer .networks-container ul .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+footer .networks-container ul .button:hover svg {
+  fill: #048abf;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,25 @@
+section#shop {
+  background: $white;
+  display: grid;
+  @media screen and (max-width: 670px) {
+    display: block;
+  }
+
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  /* ----------------------------- Text container ----------------------------- */
+  .left-part {
+    padding: 15px;
+    .text-container {
+      border: 1px dashed $gold-2;
+      padding: 20px 0;
+    }
+  }
+  /* ----------------------------- Image container ---------------------------- */
+  .img-container {
+    background: url(../img/section1-image.webp) center/cover;
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+  }
+}

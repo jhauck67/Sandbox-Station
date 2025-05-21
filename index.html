@@ -1,73 +1,336 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- ====== 🧠 [HEAD] : Titre, Meta Datas et Styles ====== -->
   <head>
+    <!-- Charset et responsive -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ------------- Titre, Meta Description, Favicon et Auteur -------------- -->
-
-    <!--1 Titre de l'onglet (entre 50 et 60 caractères) -->
-    <title>
-      <!--todo: Le titre de la page doit comporter entre 50 et 60 caractères-->
-    </title>
-
-    <!-- 1 Meta description -->
+    <!-- ====== 🔖 [META TAGS PAGE] ====== -->
+    <!-- Titre -->
+    <title>Sandbox-Station – Intégrations & petits projets front-end</title>
+    <!-- Meta Description -->
     <meta
       name="description"
-      content="<!--todo: La description de la page doit comporter entre 150 et 160 caractères -->"
+      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
     />
-
-    <!-- 1 Les favicons -->
-    <!-- favicon au format ICO -->
-    <link rel="icon" type="image/x-icon" href="<!--todo: favicon.ico-->" />
-    <!-- favicon au format SVG -->
-    <link rel="icon" type="image/svg+xml" href="<!--todo: favicon.svg-->" />
-    <!-- favicon au format PNG -->
+    <!-- favicon.ico -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicons/favicon.ico" />
+    <!-- favicon.svg -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/icons/favicons/favicon.svg" />
+    <!-- favicon.png -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="<!--todo: favicon.png-->"
+      href="./assets/img/icons/favicons/favicon32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="<!--todo: favicon.png-->"
+      href="./assets/img/icons/favicons/favicon16x16.png"
     />
-    <!-- icone pour Apple Touch -->
+    <!-- Apple-touch-icon.png -->
     <link
-      rel="apple-touh-icon"
+      rel="apple-touch-icon"
       sizes="180x180"
-      href="<!--todo: apple-touch-icon.png-->"
+      href="./assets/img/icons/favicons/apple-touch-icon.png"
     />
-
-    <!-- 1 Auteur -->
+    <!-- Auteur -->
     <meta name="author" content="Jhauck67" />
 
-    <!-- ------------------------- Facebook Meta Tags -------------------------- -->
-    <!--todo: Coller les meta-tags générés à partir de opengraph.xyz-->
+    <!-- ====== 🔖 [OPENGRAPH META TAGS] ====== -->
+    <meta property="og:url" content="https://jhauck67.github.io/Sandbox-Station/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sandbox-Station – Intégrations & petits projets front-end" />
+    <meta
+      property="og:description"
+      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
+    />
+    <meta
+      property="og:image"
+      content="https://jhauck67.github.io/Sandbox-Station/assets/sketch/opengraph.png"
+    />
 
-    <!-- ------------------------ Feuille de style CSS ------------------------- -->
-    <link rel="preload" href="<!--todo index.css-->" as="style" />
-    <!-- permet de précharger la feuille de style css -->
-    <link rel="stylesheet" href="<!--todo index.css-->" />
-    <!-- feuille de style CSS -->
+    <!-- ====== 🎨 [FEUILLE DE STYLE CSS] ====== -->
+    <!-- Précharger la feuille de style css -->
+    <link rel="preload" href="./assets/styles/index.css" as="style" />
+    <!-- Lien vers la feuille de style css -->
+    <link rel="stylesheet" href="./assets/styles/index.css" />
 
-    <!-- --------------------------- Preload des images --------------------------- -->
+    <!-- ====== 🖼️ [PRELOAD DES IMAGES] ====== -->
     <!-- permet de précharger les images importantes -->
-    <!--todo <link rel="preload" href="./chemin/vers/imges.webp" as="image" type="image/webp"/>-->
+    <link
+      rel="preload"
+      href="./assets/img/header-illustration-langages.webp"
+      as="image"
+      type="image/webp"
+    />
   </head>
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                             DEBUT DE LA PAGE                            -->
-  <!-- ----------------------------------------------------------------------- -->
-  <body style="display: flex; align-items: center; justify-content: center; min-height: 100dvh;">
-    <nav></nav>
-    <header><h1>Le contenu arrivera bientôt</h1></header>
-    <main></main>
-    <footer></footer>
+
+  <!-- ===== 📄 [BODY] : Début du site ====== -->
+  <body>
+    <!-- 🧠 [HEADER] : En-tête avec titre du portfolio -->
+    <header class="site-header">
+      <div class="header-content">
+        <div class="logo-container">
+          <div class="logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">Sandbox-Station</span>
+            <span class="logo-bracket">]</span>
+          </div>
+          <p class="tagline">Laboratoire d'expérimentations web</p>
+        </div>
+
+        <!-- 🧭 [NAVIGATION PRINCIPALE] : Navigation vers les titres des sections -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#integrations" class="nav-link active">Intégrations</a></li>
+            <li><a href="#interactions" class="nav-link">Interactions</a></li>
+            <li><a href="#experiments" class="nav-link">Experiments</a></li>
+            <li><a href="#apps" class="nav-link">Apps</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Banner de présentation -->
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h1 class="glitch-text" data-text="Sandbox-Station">Sandbox-Station</h1>
+          <!-- ZONE À PERSONNALISER : Texte d'introduction -->
+          <p class="hero-text">
+            Ici se trouvent tous mes projets en cours ou finalisés, développés à la main en
+            HTML/CSS/JS. Un labo d’idées, un terrain d’expériences, un endroit où je casse, teste,
+            améliore — et documente mes apprentissages.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="cta-button">Explorer les projets &darr;</a>
+          </div>
+
+          <!-- Illustration décorative -->
+          <img
+            class="illustration"
+            src="./assets/img/header-illustration-langages.webp"
+            alt="Illustration en style futuriste montrant un ordinateur central connecté à plusieurs technologies web : HTML5, CSS3, JavaScript, React, Figma, GitHub, Node.js et Visual Studio Code."
+            width="640"
+            height="448"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Projets / Galerie -->
+      <div class="projects-container" id="projects">
+        <!-- Section Integrations -->
+        <section id="integrations">
+          <div class="integrations-header">
+            <h2>Projets d'intégration HTML/CSS statiques</h2>
+            <p>
+              Des pages web reproduites au pixel près, codées à la main pour m’entraîner à
+              l’intégration fidèle de maquettes.
+              <br />
+              Chaque projet est une maquette transformée en page web responsive, avec une attention
+              particulière portée à la sémantique et aux détails visuels.
+            </p>
+          </div>
+          <div class="integrations-body">
+            <div class="cards-container">
+              <article class="card" id="gaming-campus">
+                <div class="description">
+                  <h3>Gaming Campus</h3>
+                  <p>
+                    Intégration fidèle et responsive de la maquette Gaming Campus, respectant la
+                    charte graphique et optimisée pour une expérience utilisateur fluide.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                  </div>
+                  <a
+                    href="https://jhauck67.github.io/Sandbox-Station/projects/Gaming-Campus/index.html"
+                  >
+                    Voir l'intégration Gaming Campus
+                  </a>
+                </div>
+              </article>
+              <article class="card" id="run">
+                <div class="description">
+                  <h3>Run</h3>
+                  <p>
+                    Intégration responsive et soignée de la maquette Run, respectant les standards
+                    web et optimisée performance.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                  </div>
+                  <a href="https://jhauck67.github.io/Sandbox-Station/projects/Run/index.html">
+                    Voir l'intégration Run
+                  </a>
+                </div>
+              </article>
+              <article class="card" id="la-montagne">
+                <div class="description">
+                  <h3>La Montagne</h3>
+                  <p>
+                    Intégration fidèle et responsive de la maquette La Montagne, avec respect strict
+                    de la charte graphique.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                  </div>
+                  <a
+                    href="https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/index.html"
+                  >
+                    Voir l'intégration La Montagne
+                  </a>
+                </div>
+              </article>
+              <article class="card" id="le-resto">
+                <div class="description">
+                  <h3>Le Resto</h3>
+                  <p>
+                    Intégration précise et responsive de la maquette Le Resto, optimisée pour une
+                    navigation fluide et intuitive.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                  </div>
+                  <a
+                    href="https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/index.html"
+                  >
+                    Voir l'intégration Le Resto
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Section Interactions -->
+        <section id="interactions">
+          <div class="interactions-header">
+            <h2>Projets avec JavaScript Vanilla</h2>
+            <p>
+              Ces projets me permettent de manipuler le JavaScript côté interface, en douceur mais
+              avec ambition.
+              <br />
+              Ajout de comportements dynamiques simples : sliders, menus déroulants, filtres
+              interactifs… sans librairies externes.
+            </p>
+          </div>
+          <div class="interactions-body">
+            <div class="cards-container">
+              <article class="card" id="interactions-img">
+                <div class="description">
+                  <h3>En préparation</h3>
+                  <p>
+                    Un futur projet JavaScript est en train de manipuler le DOM dans l’ombre…
+                    Prépare-toi à cliquer.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                    <p class="tag">JS</p>
+                  </div>
+                  <a href="#">Bientôt interactif...</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Section Experiments -->
+        <section id="experiments">
+          <div class="experiments-header">
+            <h2>Tests techniques et expérimentations</h2>
+            <p>
+              Ici je casse, je tente, je joue. Ces projets sont des prototypes, des bouts de code,
+              des idées en chantier.
+              <br />
+              Rien n’est figé : ces expériences évoluent au fil de mes découvertes, et parfois
+              donnent naissance à des projets complets.
+            </p>
+          </div>
+          <div class="experiments-body">
+            <div class="cards-container">
+              <article class="card" id="experiments-img">
+                <div class="description">
+                  <h3>Prototype instable</h3>
+                  <p>
+                    Une expérimentation est en cours.
+                    <br />
+                    Ça clignote, ça bugge… donc c’est prometteur.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                    <p class="tag">JS</p>
+                  </div>
+                  <a href="#">Mutation en cours...</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Section Apps -->
+        <section id="apps">
+          <div class="apps-header">
+            <h2>Mini-apps ou outils interactifs</h2>
+            <p>
+              Je m’entraîne ici à structurer des applications web simples : todo list, générateur de
+              mots de passe, simulateur interactif…
+              <br />
+              Ces apps sont autonomes, interactives et codées from scratch — parfaites pour faire
+              travailler mon JS dans la vraie vie.
+            </p>
+          </div>
+          <div class="apps-body">
+            <div class="cards-container">
+              <article class="card" id="apps-img">
+                <div class="description">
+                  <h3>En construction</h3>
+                  <p>
+                    Une app se compile dans un coin de mon cerveau (et de mon repo).
+                    <br />
+                    Une petite fonctionnalité, un grand potentiel.
+                  </p>
+                  <div class="tags">
+                    <p class="tag">HTML</p>
+                    <p class="tag">SASS</p>
+                    <p class="tag">JS</p>
+                  </div>
+                  <a href="#">Work in progress...</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <!-- ZONE À PERSONNALISER : Informations de contact -->
+        <div class="contact-info">
+          <p>
+            Contact:
+            <a href="mailto:votre-email@exemple.com">jenniferhauck2017@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy;
+            <span id="current-year">2025</span>
+            Votre Nom - Tous droits réservés
+          </p>
+          <p class="sandbox-credit">
+            Créé avec
+            <span class="accent">Sandbox-Station</span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-<!-- ----------------------------------------------------------------------- -->
-<!--                             FIN DE LA PAGE                              -->
-<!-- ----------------------------------------------------------------------- -->

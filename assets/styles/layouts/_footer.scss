@@ -1,0 +1,39 @@
+/* Footer */
+footer {
+  max-width: 1000px;
+  padding-left: map-get($spacings, l);
+  padding-right: map-get($spacings, l);
+  border-top: 1px solid $grey;
+  color: var(--color-gray);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacings, m);
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contact-info a {
+  color: $grey;
+}
+
+.contact-info a:hover {
+  color: $primary;
+}
+
+.sandbox-credit {
+  margin-top: map-get($spacings, xs);
+}
+
+.accent {
+  color: $primary;
+  font-weight: 700;
+}

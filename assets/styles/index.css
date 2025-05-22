@@ -127,6 +127,37 @@ footer {
   min-height: 0vw;
 }
 
+.project-header {
+  margin: 0 clamp(1rem, 1rem + (1vw - 0.2rem) * 1.4286, 2rem) clamp(2rem, 2rem + (1vw - 0.2rem) * 1.4286, 3rem);
+  padding-bottom: clamp(1rem, 1rem + (1vw - 0.2rem) * 1.4286, 2rem);
+  min-height: 0vw;
+}
+
+.back-link {
+  margin: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem) 0;
+  padding: clamp(0.25rem, 0.25rem + (1vw - 0.2rem) * 0.3571, 0.5rem) clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+  font-size: clamp(0.75rem, 0.75rem + (1vw - 0.2rem) * 0.2143, 0.9rem);
+  min-height: 0vw;
+}
+
+.project-title h1 {
+  margin: clamp(1rem, 1rem + (1vw - 0.2rem) * 1.4286, 2rem) clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+  min-height: 0vw;
+}
+
+.project-status {
+  margin-bottom: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+  min-height: 0vw;
+}
+
+.tech-stack {
+  margin-top: clamp(1rem, 1rem + (1vw - 0.2rem) * 1.4286, 2rem);
+}
+
+.tech-icons {
+  margin-top: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+}
+
 *,
 *::before,
 *::after {
@@ -363,7 +394,7 @@ footer {
   padding-left: 2rem;
   padding-right: 2rem;
   border-top: 1px solid #7f8c8d;
-  color: var(--color-gray);
+  color: #7f8c8d;
 }
 
 .footer-content {
@@ -406,6 +437,121 @@ footer {
 .accent {
   color: #39ff14;
   font-weight: 700;
+}
+
+.project-header {
+  max-width: 1200px;
+  margin: 0 clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+  border-bottom: 1px solid #2d2d2d;
+}
+
+nav {
+  text-align: left;
+}
+
+.project-tagline {
+  color: #7f8c8d;
+}
+
+a.back-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  background: #2d2d2d;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+}
+a.back-link:hover {
+  background: #7f8c8d;
+}
+
+.project-card {
+  background: #2d2d2d;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 770px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.status-badge {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  background: #39ff14;
+  color: #0d0d0d;
+  font-weight: 500;
+}
+
+.tech-stack h2 {
+  margin-top: 0;
+}
+
+.tech-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-preview {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #2d2d2d;
+}
+
+.preview-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #2d2d2d;
+}
+.preview-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.preview-container figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.25rem 1rem;
+  background: #2d2d2d;
+  color: #7f8c8d;
+  text-align: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.preview-container:hover figcaption {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media (max-width: 770px) {
@@ -537,6 +683,12 @@ a.nav-link:hover::after {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 90%, rgba(0, 0, 0, 0) 100%);
   -webkit-transform: translateY(85%);
           transform: translateY(85%);
+}
+@media (max-width: 770px) {
+  .description {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
 }
 .description h3 {
   width: -webkit-max-content;

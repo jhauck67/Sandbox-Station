@@ -75,6 +75,9 @@
     rgba(0, 0, 0, 0) 100%
   );
   transform: translateY(85%);
+  @include respond(tablet) {
+    transform: translate(0%);
+  }
 
   h3 {
     width: max-content;

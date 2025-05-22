@@ -1,0 +1,13 @@
+.project-header {
+  max-width: 1200px;
+  margin: 0 clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+  border-bottom: 1px solid $anthracite;
+}
+
+nav {
+  text-align: left;
+}
+
+.project-tagline {
+  color: $grey;
+}

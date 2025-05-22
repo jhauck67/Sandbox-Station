@@ -1,0 +1,66 @@
+.project-card {
+  background: $anthracite;
+  border-radius: $radius-l;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: map-get($spacings, xl);
+  box-shadow: $box-shadow;
+  @include respond(tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: map-get($spacings, xs) map-get($spacings, m);
+  border-radius: 50px;
+  background: $primary;
+  color: $black;
+  font-weight: 500;
+}
+
+.tech-stack h2 {
+  margin-top: 0;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: map-get($spacings, m);
+}
+
+.project-preview {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-m;
+  background: $anthracite;
+}
+
+.preview-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-m;
+  border: 1px solid $anthracite;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: map-get($spacings, xs) map-get($spacings, m);
+    background: $anthracite;
+    color: $grey;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform $transition-normal;
+  }
+  &:hover figcaption {
+    transform: translateY(0);
+  }
+}

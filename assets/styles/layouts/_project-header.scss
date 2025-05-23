@@ -1,13 +1,50 @@
+// ====== 🧠 [PROJETCT-HEADER] ======
 .project-header {
   max-width: 1200px;
-  margin: 0 clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
-  border-bottom: 1px solid $anthracite;
-}
+  margin: 1rem auto;
+  @include respond(mobile) {
+    margin: 0.5rem auto;
+  }
+  padding: 1rem;
 
-nav {
-  text-align: left;
-}
+  // ====== Navigation retour ======
+  nav {
+    text-align: left;
+    a {
+      background: $dark-lighter;
+      border: 1px solid $dark-lighter;
+      border-radius: $radius-m;
+      padding: clamp(0.25rem, calc(0.25rem + ((1vw - 0.2rem) * 0.7143)), 0.75rem)
+        clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+      margin: 0;
+      font-family: $font-title;
+      font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.3571)), 1rem);
+      min-height: 0vw;
+      font-weight: 700;
+      color: $white;
+      transition: all $transition-normal;
+      &:hover {
+        background: $anthracite;
+        text-shadow: 0 2px 4px rgba($color: #ffffff, $alpha: 0.5);
+        transform: translateY(-5px);
+      }
+    }
+  }
 
-.project-tagline {
-  color: $grey;
+  // ====== Project title ======
+  .project-title {
+    padding-bottom: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 2.1429)), 2rem);
+    border-bottom: 1px solid $grey;
+    h1 {
+      font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.2rem) * 1.4286)), 2.5rem);
+      min-height: 0vw;
+      color: $primary;
+    }
+    .project-tagline {
+      font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.7857)), 1.3rem);
+      min-height: 0vw;
+      color: $grey;
+      transform: translateY(-15px);
+    }
+  }
 }

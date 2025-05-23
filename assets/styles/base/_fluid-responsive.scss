@@ -98,37 +98,3 @@ footer {
   padding-top: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
   min-height: 0vw;
 }
-
-// Pour les pages projets
-.project-header {
-  margin: 0 clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem)
-    clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.4286)), 3rem);
-  padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
-  min-height: 0vw;
-}
-
-.back-link {
-  margin: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem) 0;
-  padding: clamp(0.25rem, calc(0.25rem + ((1vw - 0.2rem) * 0.3571)), 0.5rem)
-    clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
-  font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.2143)), 0.9rem);
-  min-height: 0vw;
-}
-
-.project-title h1 {
-  margin: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem)
-    clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
-  min-height: 0vw;
-}
-
-//section project-card
-.project-status {
-  margin-bottom: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
-  min-height: 0vw;
-}
-.tech-stack {
-  margin-top: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
-}
-.tech-icons {
-  margin-top: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
-}

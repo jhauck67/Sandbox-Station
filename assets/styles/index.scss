@@ -1,25 +1,9 @@
-// ====== 🧭 [INDEX DES PAGES SCSS] ======
-
-// 🧰 [UTILS] : Variables, Mixins, Placeholders, ...
-@import './base/typography';
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/placeholders';
-
-// 📚 [BASE] : Reset, paramètres globaux, typographie ...
-@import './base/fluid-responsive';
-@import './base/reset';
-@import './base/global';
-
-// 🧱 [LAYOUTS] : Mise en page des différentes sections
-@import './layouts/header';
-@import './layouts/hero-banner';
-@import './layouts/footer';
-@import './layouts/page-project';
-
-// 🧩 [COMPONENTS] : Boutons, Formulaire, ...
-@import './components/navigation';
-@import './components/img-sliders';
-
-// 🎞️ [ANIMATIONS] : Effets, Animations, ...
-@import './animations/glitch';
+@import "./settings";
+@import "./components/nav";
+@import "./layouts/header";
+@import "./components/button";
+@import "./layouts/headband";
+@import "./layouts/cursus";
+@import "./layouts/news";
+@import "./layouts/links";
+@import "./layouts/footer";

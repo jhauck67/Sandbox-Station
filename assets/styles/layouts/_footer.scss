@@ -1,39 +1,39 @@
-/* Footer */
-footer {
-  max-width: 1200px;
-  padding-left: map-get($spacings, l);
-  padding-right: map-get($spacings, l);
-  border-top: 1px solid $grey;
-  color: $grey;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: map-get($spacings, m);
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+footer.investors {
+  background: $black;
+  .investors-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    h2 {
+      @include title;
+      @include h2-police-desktop;
+      color: $white;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+    .investors-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 770px) {
+        display: block;
+      }
+      .investors-logos-left ul,
+      .investors-logos-right ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          @include centerChild;
+          padding: 0 10px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
-}
-
-.contact-info a {
-  color: $grey;
-}
-
-.contact-info a:hover {
-  color: $primary;
-}
-
-.sandbox-credit {
-  margin-top: map-get($spacings, xs);
-}
-
-.accent {
-  color: $primary;
-  font-weight: 700;
 }

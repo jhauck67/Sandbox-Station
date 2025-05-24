@@ -1,347 +1,639 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- ====== 🧠 [HEAD] : Titre, Meta Datas et Styles ====== -->
   <head>
-    <!-- Charset et responsive -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0d0d0d" />
-
-    <!-- ====== 🔖 [META TAGS PAGE] ====== -->
-    <!-- Titre -->
-    <title>Sandbox-Station – Intégrations & petits projets front-end</title>
-    <!-- Meta Description -->
+    <!-- Titre, Meta Description, Favicon et Auteur -->
+    <title>
+      Gaming Campus - Formations en Management, Esport et Jeux Vidéo
+    </title>
     <meta
       name="description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
+      content="Découvrez Gaming Campus, le premier campus en France dédié aux métiers du jeu vidéo : management, esport, et perfectionnement gaming. Rejoignez-nous pour transformer votre passion en carrière."
     />
-    <!-- favicon.ico -->
-    <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicons/favicon.ico" />
-    <!-- favicon.svg -->
-    <link rel="icon" type="image/svg+xml" href="./assets/img/icons/favicons/favicon.svg" />
-    <!-- favicon.png -->
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/img/icons/favicons/favicon32x32.png"
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/img/icons/favicons/favicon16x16.png"
-    />
-    <!-- Apple-touch-icon.png -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/img/icons/favicons/apple-touch-icon.png"
-    />
-    <!-- Auteur -->
+    <link rel="apple-touch-icon" href="./assets/img/favicon.ico" />
     <meta name="author" content="Jhauck67" />
-
-    <!-- ====== 🔖 [OPENGRAPH META TAGS] ====== -->
-    <meta property="og:url" content="https://jhauck67.github.io/Sandbox-Station/index.html" />
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://jhauck67.github.io/Projet-Gaming-Campus/"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sandbox-Station – Intégrations & petits projets front-end" />
+    <meta
+      property="og:title"
+      content="
+      Gaming Campus - Formations en Management, Esport et Jeux Vidéo
+    "
+    />
     <meta
       property="og:description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
+      content="Découvrez Gaming Campus, le premier campus en France dédié aux métiers du jeu vidéo : management, esport, et perfectionnement gaming. Rejoignez-nous pour transformer votre passion en carrière."
     />
     <meta
       property="og:image"
-      content="https://jhauck67.github.io/Sandbox-Station/assets/sketch/opengraph.png"
+      content="https://opengraph.b-cdn.net/production/images/f88dc89d-0558-413c-89d5-0425a3ba9d4a.jpg?token=AuQBGOcWARH6QtopN8ev72rRiLn7by4YCUT0urUR8WQ&height=630&width=1200&expires=33281877863"
     />
 
-    <!-- ====== 🎨 [FEUILLE DE STYLE CSS] ====== -->
-    <!-- Précharger la feuille de style css -->
-    <link rel="preload" href="./assets/styles/index.css" as="style" />
-    <!-- Lien vers la feuille de style css -->
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="jhauck67.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://jhauck67.github.io/Projet-Gaming-Campus/"
+    />
+    <meta
+      name="twitter:title"
+      content="
+      Gaming Campus - Formations en Management, Esport et Jeux Vidéo
+    "
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez Gaming Campus, le premier campus en France dédié aux métiers du jeu vidéo : management, esport, et perfectionnement gaming. Rejoignez-nous pour transformer votre passion en carrière."
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/images/f88dc89d-0558-413c-89d5-0425a3ba9d4a.jpg?token=AuQBGOcWARH6QtopN8ev72rRiLn7by4YCUT0urUR8WQ&height=630&width=1200&expires=33281877863"
+    />
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-    <!-- ====== 🖼️ [PRELOAD DES IMAGES] ====== -->
-    <!-- permet de précharger les images importantes -->
+    <!-- Feuille de style CSS -->
+    <link rel="preload" href="./assets/styles/index.css" as="style" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- Preload du hero -->
     <link
       rel="preload"
-      href="./assets/img/header-illustration-langages.webp"
+      href="./assets/img/background-video-game-player.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/background-video-game-player-mobile.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/logo-gc-hero.webp"
       as="image"
       type="image/webp"
     />
   </head>
-
-  <!-- ===== 📄 [BODY] : Début du site ====== -->
   <body>
-    <!-- 🧠 [HEADER] : En-tête avec titre du portfolio -->
-    <header class="site-header">
-      <div class="header-content">
-        <!-- 🖼️ [LOGO] : Logo et accroche de Sandbox-Station -->
-        <div class="logo-container">
-          <div class="logo">
-            <span class="logo-bracket">[</span>
-            <span class="logo-text">Sandbox-Station</span>
-            <span class="logo-bracket">]</span>
-          </div>
-          <p class="tagline">Laboratoire d'expérimentations web</p>
-        </div>
-
-        <!-- 🧭 [NAVIGATION PRINCIPALE] : Navigation vers les titres des sections -->
-        <nav class="main-nav" aria-label="Navigation principale">
-          <ul>
-            <li><a href="#integrations" class="nav-link active">Intégrations</a></li>
-            <li><a href="#interactions" class="nav-link">Interactions</a></li>
-            <li><a href="#experiments" class="nav-link">Experiments</a></li>
-            <li><a href="#apps" class="nav-link">Apps</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- 🔖 [BANNER] : Banner de présentation -->
-      <div class="hero-banner">
-        <div class="hero-content">
-          <h1 class="glitch-text" data-text="Sandbox-Station">Sandbox-Station</h1>
-          <p class="hero-text">
-            Ici se trouvent tous mes projets en cours ou finalisés, développés à la main en
-            HTML/CSS/JS. Un labo d’idées, un terrain d’expériences, un endroit où je casse, teste,
-            améliore — et documente mes apprentissages.
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="cta-button">Explorer les projets &darr;</a>
-          </div>
-
-          <!-- 🖼️ [ILLUSTRATION] : Illustration décorative -->
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Business School</a></li>
+        <li><a href="#">Ecole esport</a></li>
+        <li><a href="#">Cours de jeux vidéo</a></li>
+        <li><a href="#">Le campus</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Parents</a></li>
+        <li><div class="language">FR | EN</div></li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-container">
+        <div class="hero-container-logo">
           <img
-            class="illustration"
-            src="./assets/img/header-illustration-langages.webp"
-            alt="Illustration en style futuriste montrant un ordinateur central connecté à plusieurs technologies web : HTML5, CSS3, JavaScript, React, Figma, GitHub, Node.js et Visual Studio Code."
-            width="640"
-            height="448"
+            srcset="
+              ./assets/img/logo-gc-hero.webp,
+              ./assets/img/logo-gc-hero-mobile.webp 0.75x
+            "
+            src="./assets/img/logo-gc-hero.webp"
+            alt="Logo de Gaming Campus"
+            width="600"
+            height="263"
           />
+        </div>
+        <h1>Passion. Professionnalisme. Performance.</h1>
+        <div class="button">
+          <a href="#"
+            >Gaming Campus en video
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="10"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="inherit"
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </header>
-    <!-- 📚 [PROJECTS] : Galerie de projets -->
-    <main>
-      <div class="projects-container" id="projects">
-        <!-- Section Integrations -->
-        <section id="integrations">
-          <div class="integrations-header">
-            <h2>Projets d'intégration HTML/CSS statiques</h2>
-            <p>
-              Des pages web reproduites au pixel près, codées à la main pour m’entraîner à
-              l’intégration fidèle de maquettes.
-              <br />
-              Chaque projet est une maquette transformée en page web responsive, avec une attention
-              particulière portée à la sémantique et aux détails visuels.
-            </p>
-          </div>
-          <div class="integrations-body">
-            <div class="cards-container">
-              <!-- [Projet] : Gaming Campus -->
-              <article class="card" id="gaming-campus">
-                <div class="description">
-                  <h3>Gaming Campus</h3>
-                  <p>
-                    Intégration fidèle et responsive de la maquette Gaming Campus, respectant la
-                    charte graphique et optimisée pour une expérience utilisateur fluide.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <!-- TODO Renvoyer vers la page de présentation du projet ! -->
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/Gaming-Campus/index.html"
-                  >
-                    Voir l'intégration Gaming Campus
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : Run -->
-              <article class="card" id="run">
-                <div class="description">
-                  <h3>Run</h3>
-                  <p>
-                    Intégration responsive et soignée de la maquette Run, respectant les standards
-                    web et optimisée performance.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <!-- TODO Attention renvoyer vers la page de présentation du projet ! -->
-                  <a href="https://jhauck67.github.io/Sandbox-Station/projects/Run/index.html">
-                    Voir l'intégration Run
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : La Montagne -->
-              <article class="card" id="la-montagne">
-                <div class="description">
-                  <h3>La Montagne</h3>
-                  <p>
-                    Intégration fidèle et responsive de la maquette La Montagne, avec respect strict
-                    de la charte graphique.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <!-- TODO Attention renvoyer vers la page de présentation du projet ! -->
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/index.html"
-                  >
-                    Voir l'intégration La Montagne
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : Le Resto -->
-              <article class="card" id="le-resto">
-                <div class="description">
-                  <h3>Le Resto</h3>
-                  <p>
-                    Intégration précise et responsive de la maquette Le Resto, optimisée pour une
-                    navigation fluide et intuitive.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <!-- TODO Attention renvoyer vers la page de présentation du projet -->
-                  <a href="https://jhauck67.github.io/Sandbox-Station/projects/Le-Resto/index.html">
-                    Voir l'intégration Le Resto
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- Section Interactions -->
-        <section id="interactions">
-          <div class="interactions-header">
-            <h2>Projets avec JavaScript Vanilla</h2>
-            <p>
-              Ces projets me permettent de manipuler le JavaScript côté interface, en douceur mais
-              avec ambition.
-              <br />
-              Ajout de comportements dynamiques simples : sliders, menus déroulants, filtres
-              interactifs… sans librairies externes.
-            </p>
-          </div>
-          <div class="interactions-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="interactions-img">
-                <div class="description">
-                  <h3>En préparation</h3>
-                  <p>
-                    Un futur projet JavaScript est en train de manipuler le DOM dans l’ombre…
-                    Prépare-toi à cliquer.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Bientôt interactif...</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- Section Experiments -->
-        <section id="experiments">
-          <div class="experiments-header">
-            <h2>Tests techniques et expérimentations</h2>
-            <p>
-              Ici je casse, je tente, je joue. Ces projets sont des prototypes, des bouts de code,
-              des idées en chantier.
-              <br />
-              Rien n’est figé : ces expériences évoluent au fil de mes découvertes, et parfois
-              donnent naissance à des projets complets.
-            </p>
-          </div>
-          <div class="experiments-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="experiments-img">
-                <div class="description">
-                  <h3>Prototype instable</h3>
-                  <p>
-                    Une expérimentation est en cours.
-                    <br />
-                    Ça clignote, ça bugge… donc c’est prometteur.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Mutation en cours...</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- Section Apps -->
-        <section id="apps">
-          <div class="apps-header">
-            <h2>Mini-apps ou outils interactifs</h2>
-            <p>
-              Je m’entraîne ici à structurer des applications web simples : todo list, générateur de
-              mots de passe, simulateur interactif…
-              <br />
-              Ces apps sont autonomes, interactives et codées from scratch — parfaites pour faire
-              travailler mon JS dans la vraie vie.
-            </p>
-          </div>
-          <div class="apps-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="apps-img">
-                <div class="description">
-                  <h3>En construction</h3>
-                  <p>
-                    Une app se compile dans un coin de mon cerveau (et de mon repo).
-                    <br />
-                    Une petite fonctionnalité, un grand potentiel.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Work in progress...</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+    <section class="headband">
+      <div class="headband-container">
+        <h2>
+          Imaginé par des professionnels des jeux vidéo et de l'éducation.
+          Gaming Campus est un lieu unique pour révéler les talents et
+          développer les compétences
+        </h2>
       </div>
-    </main>
-    <!-- 🧦 [FOOTER] : Pied de page, infos contact et copyright -->
-    <footer>
-      <div class="footer-content">
-        <!-- Infos de contact -->
-        <div class="contact-info">
+    </section>
+    <section class="cursus">
+      <div class="cursus-container">
+        <div class="cursus-card">
+          <div class="cursus-img-container">
+            <img
+              srcset="
+                ./assets/img/logo-gbs-home.webp,
+                ./assets/img/logo-gbs-home@2x.webp 2x
+              "
+              src="./assets/img/logo-gbs-home.webp"
+              alt="Logo de Gaming Business School"
+              width="255"
+              height="160"
+              loading="lazy"
+            />
+          </div>
+          <h3>Gaming Business School</h3>
           <p>
-            Contact:
-            <a href="mailto:votre-email@exemple.com" aria-label="Envoyer un email à Jennifer Hauck">
-              jenniferhauck2017@gmail.com
-            </a>
+            Formez-vous dans la première école de management dédiée aux enjeux
+            et métiers du jeu vidéo.
           </p>
+          <div class="button">
+            <a href="#">En savoir plus</a>
+          </div>
         </div>
-        <!-- Mentions légales et crédits -->
-        <div class="copyright">
+        <div class="cursus-card">
+          <div class="cursus-img-container">
+            <img
+              srcset="
+                ./assets/img/logo-ga-home.webp,
+                ./assets/img/logo-ga-home@2x.webp 2x
+              "
+              src="./assets/img/logo-ga-home.webp"
+              alt="Logo de Gaming Academy"
+              width="255"
+              height="160"
+              loading="lazy"
+            />
+          </div>
+          <h3>Gaming Academy</h3>
           <p>
-            &copy;
-            <span id="current-year">2025</span>
-            Jhauck67 - Tous droits réservés
+            Entrainez-vous dans des conditions optimales pour devenir esportif
+            professionnel.
           </p>
-          <p class="sandbox-credit">
-            Créé avec
-            <span class="accent">Sandbox-Station</span>
+          <div class="button">
+            <a href="#">En savoir plus</a>
+          </div>
+        </div>
+        <div class="cursus-card">
+          <div class="cursus-img-container">
+            <img
+              srcset="
+                ./assets/img/logo-gg-home.webp,
+                ./assets/img/logo-gg-home@2x.webp 2x
+              "
+              src="./assets/img/logo-gg-home.webp"
+              alt="Logo de Gaming Guru"
+              width="255"
+              height="160"
+              loading="lazy"
+            />
+          </div>
+          <h3>Gaming Guru</h3>
+          <p>
+            Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux
+            vidéo préférés.
           </p>
+          <div class="button">
+            <a href="#">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news-container">
+        <div class="news-title">
+          <div class="news-title-left">
+            <h2>Les news du Campus</h2>
+            <p>
+              Suivez l'actualité de Gaming Campus, de G. Guru, G.B.S et G.
+              Academy.
+            </p>
+          </div>
+          <div class="news-title-right">
+            <div class="button">
+              <a href="#"
+                >Newsroom
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="10"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="news-main">
+          <div class="news-card">
+            <div class="news-img-container">
+              <img
+                src="./assets/img/ri8decembre.webp"
+                alt="Photo de la réunion d'information du 19 décembre"
+                width="255"
+                height="214"
+                loading="lazy"
+              />
+            </div>
+            <h3>Réunion d'information 19 décembre</h3>
+            <p>
+              Venez à notre rencontre lors de cette réunion d'information.
+              Témoignages des étudiants / Ateliers sur la pédagogie par projet
+              "Active Learning by Gaming Campus" / Découverte des locaux /
+              Rencontre avec l'équipe pédagogique / Questions réponses.
+            </p>
+            <div class="button">
+              <a href="#"
+                >Lire la suite
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="10"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-img-container">
+              <img
+                src="./assets/img/pgw18home.webp"
+                alt="Affiche de la Paris Games Week 2018"
+                width="255"
+                height="214"
+                loading="lazy"
+              />
+            </div>
+            <h3>Paris Games Week 2018 et réunions d'information</h3>
+            <p>
+              Pendant tout le mois d'octobre venez rencontrer l'équipe
+              pédagogique du Gaming Campus : Campus Lyon et stand Gaming Campus
+              à la PGW18.
+            </p>
+            <div class="button">
+              <a href="#"
+                >Lire la suite
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="10"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-img-container">
+              <img
+                src="./assets/img/inauguration_gaming_campus_photo.webp"
+                alt="Photo de l'inauguration du Gaming Campus de Lyon"
+                width="255"
+                height="214"
+                loading="lazy"
+              />
+            </div>
+            <h3>Inauguration Gaming Campus Lyon</h3>
+            <p>
+              Revivez l'inauguration du Gaming Campus Lyon avec 180 invités, les
+              grandes annonces de la rentrée, les photos de la soirée et les
+              premières dates de réunions d'information.
+            </p>
+            <div class="button">
+              <a href="#"
+                >Lire la suite
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="10"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="links">
+      <div class="links-container">
+        <div class="link-container-column1">
+          <img
+            src="./assets/img/logo-gc-footer.webp"
+            alt="Logo de Gaming Campus"
+            width="150"
+            height="198"
+            loading="lazy"
+          />
+        </div>
+        <div class="link-container-column2">
+          <h2>Infos pratiques</h2>
+          <div class="links-infos-pratiques">
+            <a href="#">Gaming Business School</a>
+            <a href="#">Gaming Academy</a>
+            <a href="#">Gaming Guru</a>
+            <a href="#">Recrutement</a>
+            <a href="#">Investisseurs</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">C.G.U</a>
+          </div>
+        </div>
+        <div class="link-container-column3">
+          <h2>Parents</h2>
+          <p>
+            Questions / réponses pour vous accompagner dans votre réflexion sur
+            l'orientation de votre enfant et le choix de Gaming Campus.
+          </p>
+          <a href="#">En savoir plus</a>
+        </div>
+        <div class="link-container-column4">
+          <div class="contact">
+            <h2>Nous contacter</h2>
+            <p>Tél. 04 28 29 81 03 <br />contact@gamingcampus.fr</p>
+          </div>
+          <div class="follow">
+            <h2>Nous suivre</h2>
+            <div class="networks">
+              <ul>
+                <li>
+                  <a
+                    class="icon twitter"
+                    href="#"
+                    aria-label="Lien vers le compte Twitter"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="icon facebook"
+                    href="#"
+                    aria-label="Lien vers le compte Facebook"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="icon linkedin"
+                    href="#"
+                    aria-label="Lien vers le compte linkedin"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="icon instagram"
+                    href="#"
+                    aria-label="Lien vers le compte Instagram"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2018 Gaming Campus. <br />contact@gamingcampus.fr</p>
+          </div>
+        </div>
+      </div>
+      <div class="press-container">
+        <div class="press-container-left">
+          <h3>Ils parlent de nous</h3>
+          <p>Voir toutes les retombées presse.</p>
+        </div>
+        <div class="press-container-right">
+          <img
+            src="./assets/img/figaro.webp"
+            alt="Logo du journal Le Figaro"
+            width="86"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/challenges.webp"
+            alt="Logo du journal Challenges"
+            width="79"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/leparisien.webp"
+            alt="Logo du journal Le Parisien"
+            width="64"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/lemonde.webp"
+            alt="Logo le monde"
+            width="64"
+            height="18"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/progres.webp"
+            alt="Logo du journal Le Progres"
+            width="97"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/echos.webp"
+            alt="Logo du journal Les Echos"
+            width="64"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/bfm.webp"
+            alt="Logo du journal Bfmtv"
+            width="48"
+            height="20"
+            loading="lazy"
+          />
+          <img
+            src="./assets/img/lepoint.webp"
+            alt="Logo du journal L'Equipe"
+            width="69"
+            height="20"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="investors">
+      <div class="investors-container">
+        <h2>Partenaires officiels</h2>
+        <div class="investors-logos">
+          <div class="investors-logos-left">
+            <ul>
+              <li>
+                <img
+                  src="./assets/img/apollo.webp"
+                  alt="Logo de Apollo"
+                  width="96"
+                  height="23"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/chiliz.webp"
+                  alt="Logo de Chiliz"
+                  width="78"
+                  height="26"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/omen.webp"
+                  alt="Logo de Omen"
+                  width="80"
+                  height="29"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/joa.webp"
+                  alt="Logo de Joa"
+                  width="82"
+                  height="25"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/maxonomic.webp"
+                  alt="Logo de Maxonomic"
+                  width="101"
+                  height="23"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="investors-logos-right">
+            <ul>
+              <li>
+                <img
+                  src="./assets/img/credit-mutuel.webp"
+                  alt="Logo de Crédit Mutuel"
+                  width="152"
+                  height="14"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/talent-web.webp"
+                  alt="Logo de Talent Web"
+                  width="52"
+                  height="26"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/ubisoft.webp"
+                  alt="Logo de Ubisoft"
+                  width="40"
+                  height="37"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/vitality.webp"
+                  alt="Logo de Vitality"
+                  width="34"
+                  height="44"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/img/zol.webp"
+                  alt="Logo de ZOL"
+                  width="50"
+                  height="26"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,8 +1,0 @@
-.networks {
-  @include alignChildren(space-between);
-  li a {
-    svg {
-      fill: $white;
-    }
-  }
-}

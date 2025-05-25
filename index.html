@@ -1,349 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- ====== 🧠 [HEAD] : Titre, Meta Datas et Styles ====== -->
   <head>
-    <!-- Charset et responsive -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0d0d0d" />
 
-    <!-- ====== 🔖 [META TAGS PAGE] ====== -->
-    <!-- Titre -->
-    <title>Sandbox-Station – Intégrations & petits projets front-end</title>
-    <!-- Meta Description -->
+    <!-- ------------- Titre, Meta Description, Favicon et Auteur -------------- -->
+
+    <!--1 Titre de l'onglet (entre 50 et 60 caractères) -->
+    <title>Run – Bouge, respire, explore.</title>
+
+    <!-- 1 Meta description -->
     <meta
       name="description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
+      content="Run est une invitation au mouvement, à l’exploration et à la reconnexion avec soi-même à travers chaque foulée."
     />
-    <!-- favicon.ico -->
-    <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicons/favicon.ico" />
-    <!-- favicon.svg -->
-    <link rel="icon" type="image/svg+xml" href="./assets/img/icons/favicons/favicon.svg" />
-    <!-- favicon.png -->
+
+    <!-- 1 Les favicons -->
+    <!-- favicon au format ICO -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/icons/favicon.ico"
+    />
+    <!-- favicon au format SVG -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/img/icons/favicon.svg"
+    />
+    <!-- favicon au format PNG -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/img/icons/favicons/favicon32x32.png"
+      href="./assets/img/icons/favicon32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/img/icons/favicons/favicon16x16.png"
+      href="./assets/img/icons/favicon16x16.png"
     />
-    <!-- Apple-touch-icon.png -->
+    <!-- icone pour Apple Touch -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/img/icons/favicons/apple-touch-icon.png"
+      href="./assets/img/icons/apple-touch-icon.png"
     />
-    <!-- Auteur -->
+
+    <!-- 1 Auteur -->
     <meta name="author" content="Jhauck67" />
 
-    <!-- ====== 🔖 [OPENGRAPH META TAGS] ====== -->
-    <meta property="og:url" content="https://jhauck67.github.io/Sandbox-Station/index.html" />
+    <!-- ------------------------- OpenGraph Meta Tags -------------------------- -->
+    <!--1 Facebook Meta Tags -->
+    <meta property="og:url" content="https://jhauck67.github.io/Projet-Run/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sandbox-Station – Intégrations & petits projets front-end" />
+    <meta property="og:title" content="Run - Le rythme de la liberté" />
     <meta
       property="og:description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
+      content="Run est une ode au mouvement, à la nature et à l’élan intérieur. Prêt·e à avancer ?"
     />
     <meta
       property="og:image"
-      content="https://jhauck67.github.io/Sandbox-Station/assets/sketch/opengraph.png"
+      content="https://opengraph.b-cdn.net/production/images/b59a70f1-a6c5-4af3-b02d-4fba239ab22a.png?token=exeYvpaPKEBBWFN9sirHjZDlaEekTCiwG1YFOZaKx2Q&height=630&width=1200&expires=33282347194"
     />
 
-    <!-- ====== 🎨 [FEUILLE DE STYLE CSS] ====== -->
-    <!-- Précharger la feuille de style css -->
-    <link rel="preload" href="./assets/styles/index.css" as="style" />
-    <!-- Lien vers la feuille de style css -->
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!--1 Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="jhauck67.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://jhauck67.github.io/Projet-Run/"
+    />
+    <meta name="twitter:title" content="Run - Le rythme de la liberté" />
+    <meta
+      name="twitter:description"
+      content="Run est une ode au mouvement, à la nature et à l’élan intérieur. Prêt·e à avancer ?"
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/images/b59a70f1-a6c5-4af3-b02d-4fba239ab22a.png?token=exeYvpaPKEBBWFN9sirHjZDlaEekTCiwG1YFOZaKx2Q&height=630&width=1200&expires=33282347194"
+    />
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-    <!-- ====== 🖼️ [PRELOAD DES IMAGES] ====== -->
+    <!-- ------------------------ Feuille de style CSS ------------------------- -->
+    <link rel="preload" href="./assets/styles/index.css" as="style" />
+    <!-- permet de précharger la feuille de style css -->
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- feuille de style CSS -->
+
+    <!-- --------------------------- Preload des images --------------------------- -->
     <!-- permet de précharger les images importantes -->
     <link
       rel="preload"
-      href="./assets/img/header-illustration-langages.webp"
+      href="./assets/img/banner-1440px.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/banner-770px.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="./assets/img/banner-600px.webp"
       as="image"
       type="image/webp"
     />
   </head>
-
-  <!-- ===== 📄 [BODY] : Début du site ====== -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             DEBUT DE LA PAGE                            -->
+  <!-- ----------------------------------------------------------------------- -->
   <body>
-    <!-- 🧠 [HEADER] : En-tête avec titre du portfolio -->
-    <header class="site-header">
-      <div class="header-content">
-        <!-- 🖼️ [LOGO] : Logo et accroche de Sandbox-Station -->
-        <div class="logo-container">
-          <div class="logo">
-            <span class="logo-bracket">[</span>
-            <span class="logo-text">Sandbox-Station</span>
-            <span class="logo-bracket">]</span>
-          </div>
-          <p class="tagline">Laboratoire d'expérimentations web</p>
-        </div>
-
-        <!-- 🧭 [NAVIGATION PRINCIPALE] : Navigation vers les titres des sections -->
-        <nav class="main-nav" aria-label="Navigation principale">
-          <ul>
-            <li><a href="#integrations" class="nav-link active">Intégrations</a></li>
-            <li><a href="#interactions" class="nav-link">Interactions</a></li>
-            <li><a href="#experiments" class="nav-link">Experiments</a></li>
-            <li><a href="#apps" class="nav-link">Apps</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- 🔖 [BANNER] : Banner de présentation -->
-      <div class="hero-banner">
-        <div class="hero-content">
-          <h1 class="glitch-text" data-text="Sandbox-Station">Sandbox-Station</h1>
-          <p class="hero-text">
-            Ici se trouvent tous mes projets en cours ou finalisés, développés à la main en
-            HTML/CSS/JS. Un labo d’idées, un terrain d’expériences, un endroit où je casse, teste,
-            améliore — et documente mes apprentissages.
+    <header>
+      <div class="header-text">
+        <div>
+          <h1>Run</h1>
+          <p>
+            Bouger, c’est vivre. Run t’accompagne sur la route, vers l’extérieur
+            comme vers toi-même, pour retrouver ton souffle, ton équilibre, et
+            ton propre élan intérieur.
           </p>
-          <div class="hero-cta">
-            <a href="#projects" class="cta-button">Explorer les projets &darr;</a>
-          </div>
-
-          <!-- 🖼️ [ILLUSTRATION] : Illustration décorative -->
-          <img
-            class="illustration"
-            src="./assets/img/header-illustration-langages.webp"
-            alt="Illustration en style futuriste montrant un ordinateur central connecté à plusieurs technologies web : HTML5, CSS3, JavaScript, React, Figma, GitHub, Node.js et Visual Studio Code."
-            width="640"
-            height="448"
-          />
+          <a href="#link" class="button">En route</a>
         </div>
       </div>
+      <div class="header-image"></div>
     </header>
-    <!-- 📚 [PROJECTS] : Galerie de projets -->
-    <main>
-      <div class="projects-container" id="projects">
-        <!-- Section Integrations -->
-        <section id="integrations">
-          <div class="integrations-header">
-            <h2>Projets d'intégration HTML/CSS statiques</h2>
+    <main id="link">
+      <section class="section1 section">
+        <div class="section1-left img-container"></div>
+        <div class="section1-right text-container">
+          <div class="container">
+            <h2>Reconnexion naturelle</h2>
             <p>
-              Des pages web reproduites au pixel près, codées à la main pour m’entraîner à
-              l’intégration fidèle de maquettes.
-              <br />
-              Chaque projet est une maquette transformée en page web responsive, avec une attention
-              particulière portée à la sémantique et aux détails visuels.
+              Courir en pleine nature, c’est laisser derrière soi le bruit du
+              monde. Chaque foulée apaise, chaque souffle ancre, chaque arbre
+              devient un repère. Le corps avance, l’esprit s’ouvre, et le
+              sentier devient un espace de liberté, de recentrage et de clarté.
             </p>
+            <a href="#" class="button">En apprendre plus</a>
           </div>
-          <div class="integrations-body">
-            <div class="cards-container">
-              <!-- [Projet] : Gaming Campus -->
-              <article class="card" id="gaming-campus">
-                <div class="description">
-                  <h3>Gaming Campus</h3>
-                  <p>
-                    Intégration fidèle et responsive de la maquette Gaming Campus, respectant la
-                    charte graphique et optimisée pour une expérience utilisateur fluide.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/Gaming-Campus/page-projet-gaming-campus.html"
-                  >
-                    Voir l'intégration Gaming Campus
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : Run -->
-              <article class="card" id="run">
-                <div class="description">
-                  <h3>Run</h3>
-                  <p>
-                    Intégration responsive et soignée de la maquette Run, respectant les standards
-                    web et optimisée performance.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/Run/page-projet-run.html"
-                  >
-                    Voir l'intégration Run
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : La Montagne -->
-              <article class="card" id="la-montagne">
-                <div class="description">
-                  <h3>La Montagne</h3>
-                  <p>
-                    Intégration fidèle et responsive de la maquette La Montagne, avec respect strict
-                    de la charte graphique.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/page-projet-la-montagne.html"
-                  >
-                    Voir l'intégration La Montagne
-                  </a>
-                </div>
-              </article>
-              <!-- [Projet] : Le Resto -->
-              <article class="card" id="le-resto">
-                <div class="description">
-                  <h3>Le Resto</h3>
-                  <p>
-                    Intégration précise et responsive de la maquette Le Resto, optimisée pour une
-                    navigation fluide et intuitive.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                  </div>
-                  <a
-                    href="https://jhauck67.github.io/Sandbox-Station/projects/Le-Resto/page-projet-le-resto.html"
-                  >
-                    Voir l'intégration Le Resto
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- Section Interactions -->
-        <section id="interactions">
-          <div class="interactions-header">
-            <h2>Projets avec JavaScript Vanilla</h2>
+        </div>
+      </section>
+      <section class="section2 section">
+        <div class="section2-left text-container">
+          <div class="container">
+            <h2>Ensemble sur le chemin</h2>
             <p>
-              Ces projets me permettent de manipuler le JavaScript côté interface, en douceur mais
-              avec ambition.
-              <br />
-              Ajout de comportements dynamiques simples : sliders, menus déroulants, filtres
-              interactifs… sans librairies externes.
+              Partager l’effort, synchroniser les foulées, respirer au même
+              rythme. Courir ensemble, c’est créer une bulle hors du temps, un
+              lien discret mais profond. Chaque pas renforce la complicité,
+              chaque souffle devient langage, et le murmure du fleuve accompagne
+              ce moment suspendu, simple et essentiel.
             </p>
+            <a href="#" class="button">En apprendre plus</a>
           </div>
-          <div class="interactions-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="interactions-img">
-                <div class="description">
-                  <h3>En préparation</h3>
-                  <p>
-                    Un futur projet JavaScript est en train de manipuler le DOM dans l’ombre…
-                    Prépare-toi à cliquer.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Bientôt interactif...</a>
-                </div>
-              </article>
-            </div>
+        </div>
+        <div class="section2-right img-container"></div>
+      </section>
+      <section class="form">
+        <h2>Dis-nous tout</h2>
+        <form>
+          <div class="name-container">
+            <label for="name">Nom</label>
+            <input type="text" id="name" required autocomplete="name" />
           </div>
-        </section>
-        <!-- Section Experiments -->
-        <section id="experiments">
-          <div class="experiments-header">
-            <h2>Tests techniques et expérimentations</h2>
-            <p>
-              Ici je casse, je tente, je joue. Ces projets sont des prototypes, des bouts de code,
-              des idées en chantier.
-              <br />
-              Rien n’est figé : ces expériences évoluent au fil de mes découvertes, et parfois
-              donnent naissance à des projets complets.
-            </p>
+          <div class="email-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" required autocomplete="email" />
           </div>
-          <div class="experiments-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="experiments-img">
-                <div class="description">
-                  <h3>Prototype instable</h3>
-                  <p>
-                    Une expérimentation est en cours.
-                    <br />
-                    Ça clignote, ça bugge… donc c’est prometteur.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Mutation en cours...</a>
-                </div>
-              </article>
-            </div>
+          <div class="message-container">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
           </div>
-        </section>
-        <!-- Section Apps -->
-        <section id="apps">
-          <div class="apps-header">
-            <h2>Mini-apps ou outils interactifs</h2>
-            <p>
-              Je m’entraîne ici à structurer des applications web simples : todo list, générateur de
-              mots de passe, simulateur interactif…
-              <br />
-              Ces apps sont autonomes, interactives et codées from scratch — parfaites pour faire
-              travailler mon JS dans la vraie vie.
-            </p>
+          <div class="button-container">
+            <input type="submit" class="button" value="Envoyer le message" />
           </div>
-          <div class="apps-body">
-            <div class="cards-container">
-              <!-- [Projet] -->
-              <article class="card" id="apps-img">
-                <div class="description">
-                  <h3>En construction</h3>
-                  <p>
-                    Une app se compile dans un coin de mon cerveau (et de mon repo).
-                    <br />
-                    Une petite fonctionnalité, un grand potentiel.
-                  </p>
-                  <div class="tags">
-                    <p class="tag">HTML</p>
-                    <p class="tag">SASS</p>
-                    <p class="tag">JS</p>
-                  </div>
-                  <a href="#">Work in progress...</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-      </div>
+        </form>
+      </section>
     </main>
-    <!-- 🧦 [FOOTER] : Pied de page, infos contact et copyright -->
     <footer>
-      <div class="footer-content">
-        <!-- Infos de contact -->
-        <div class="contact-info">
-          <p>
-            Contact:
-            <a href="mailto:votre-email@exemple.com" aria-label="Envoyer un email à Jennifer Hauck">
-              jenniferhauck2017@gmail.com
+      <div class="networks-container">
+        <ul>
+          <li>
+            <a href="#" class="button" aria-label="Suivez-nous sur Twitter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="14"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="inherit"
+                  d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                />
+              </svg>
             </a>
-          </p>
-        </div>
-        <!-- Mentions légales et crédits -->
-        <div class="copyright">
-          <p>
-            &copy;
-            <span id="current-year">2025</span>
-            Jhauck67 - Tous droits réservés
-          </p>
-          <p class="sandbox-credit">
-            Créé avec
-            <span class="accent">Sandbox-Station</span>
-          </p>
-        </div>
+          </li>
+          <li>
+            <a href="#" class="button" aria-label="Suivez-nous sur Facebook">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="8.75"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="inherit"
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button" aria-label="Suivez-nous sur Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="12.25"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="inherit"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button" aria-label="Suivez-nous sur Linkedin">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="12.25"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="inherit"
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:contact@run.fr"
+              class="button"
+              aria-label="Envoyez-nous un email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="14"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="inherit"
+                  d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
 </html>
+<!-- ----------------------------------------------------------------------- -->
+<!--                             FIN DE LA PAGE                              -->
+<!-- ----------------------------------------------------------------------- -->

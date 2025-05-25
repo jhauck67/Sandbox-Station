@@ -1,37 +1,35 @@
-.site-header {
-  position: relative;
-  background-color: $black;
-  overflow: hidden;
-}
+header {
+  width: 100%;
+  @include maxWidth;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 720px) {
+    display: block;
+  }
 
-.header-content {
-  @include alignChildren;
-  position: relative;
-  z-index: map-get($z-index, content);
-}
+  .header-text {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: 720px) {
+      width: 85%;
+      height: 50vh;
+    }
+    background: $white;
+    @include centerChild;
+  }
 
-.logo-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  @extend %centerY;
-}
-
-.logo-bracket {
-  font-family: $font-title;
-  color: $primary;
-  font-weight: 900;
-}
-
-.logo-text {
-  font-family: $font-title;
-  font-weight: 700;
-  margin: 0 map-get($spacings, xs);
-}
-
-.tagline {
-  color: $grey;
-  margin-top: map-get($spacings, -xs);
+  .header-image {
+    background: url(../img/banner-1440px.webp) right/cover;
+    //*Evolution du background selon la taille de l'écran
+    @media screen and (max-width: 720px) {
+      height: 50vh;
+      background: url(../img/banner-770px.webp) center/cover;
+    }
+    @media screen and (max-width: 500px) {
+      height: 50vh;
+      background: url(../img/banner-600px.webp) center/cover;
+    }
+  }
 }

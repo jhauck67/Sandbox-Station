@@ -5,13 +5,14 @@
   <p align="center">
   <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML Badge"/>
   <img src="https://img.shields.io/badge/CSS-%231572B6.svg?style=flat&logo=css3&logoColor=white" alt="CSS Badge"/>
+  <img src="https://img.shields.io/badge/Sass-%23CC6699.svg?style=flat&logo=sass&logoColor=white" alt="Sass Badge"/>
   <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black" alt="JS Badge"/>
   <img src="https://img.shields.io/badge/Statut-Terminé-brightgreen.svg" alt="Statut Badge"/>
 </p>
   
   <p>
   <!-- TODO Modifier le chemin de l'ancre -->
-    <a href="./index.html">Voir la démo</a> •
+    <a href="https://jhauck67.github.io/Sandbox-Station/projects/Nom-du-Projet/demo/index.html">Voir la démo</a> •
     <a href="#-présentation-rapide">Présentation projet</a> •
     <a href="#-ce-que-jai-appris">Ce que j'ai appris</a> •
     <a href="#-à-propos-de-lautrice">À propos</a>

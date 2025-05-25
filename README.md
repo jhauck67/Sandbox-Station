@@ -1,193 +1,70 @@
-![# Projet Gaming Campus](assets/sketch/github-header-image.png)
+<div align="center">
+  <h1>🚀 Gaming Campus</h1>
+  <p>Intégration d'une maquette web interactive et responsive</p>
+  
+  <p align="center">
+  <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML Badge"/>
+  <img src="https://img.shields.io/badge/Sass-%23CC6699.svg?style=flat&logo=sass&logoColor=white" alt="Sass Badge"/>
+  <img src="https://img.shields.io/badge/Statut-Terminé-brightgreen.svg" alt="Statut Badge"/>
+</p>
+  
+  <p>
+    <a href="./index.html">Voir la démo</a> •
+    <a href="#-présentation-rapide">Présentation projet</a> •
+    <a href="#-ce-que-jai-appris">Ce que j'ai appris</a> •
+    <a href="#-à-propos-de-lautrice">À propos</a>
+  </p>
+  
+  <img src="./assets/sketch/aperçu.png" alt="Aperçu du projet" width="600" />
+</div>
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
-![Responsive Design](https://img.shields.io/badge/Responsive_Design-Mobile_Friendly-2ea44f) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![SEO Friendly](https://img.shields.io/badge/SEO-Friendly-2ea44f)  
-\
-![Lighthouse](https://img.shields.io/badge/Lighthouse-white?style=for-the-badge&logo=lighthouse)
-![Performances](https://img.shields.io/badge/Performances-95-brightgreen) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen) ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
-\
-<img src="https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/aper%C3%A7u.png" alt="Aperçu du Projet" style="width:960px; height:auto;">
+## 🧩 Présentation rapide
 
-# Description
+Petit projet codé avec amour 💻✨  
+Objectif : Intégrer la maquette au pixel près 
+Contexte : Formation HTML/CSS/SASS  
+Contraintes : Rendre le tout responsive
 
-Ce projet consiste en l'intégration d'une maquette desktop et mobile pour le site du **Gaming Campus**, un établissement qui enseigne les métiers du jeu vidéo. L'objectif est de recréer les maquettes en HTML et CSS tout en optimisant le site pour le SEO.
+🔗 [Voir la démo dans le navigateur](./index.html)
 
-## Technologies utilisées :
+## 🖼️ Aperçu
 
-- <img src="https://go-skill-icons.vercel.app/api/icons?i=html" alt="Logo HTML" style="width:16px; height:auto;"> HTML 5
-- <img src="https://go-skill-icons.vercel.app/api/icons?i=css" alt="Logo CSS" style="width:16px; height:auto;"> CSS 3
-- <img src="https://go-skill-icons.vercel.app/api/icons?i=sass" alt="Logo SASS" style="width:16px; height:auto;"> SASS
-- <img src="https://go-skill-icons.vercel.app/api/icons?i=git" alt="Logo GIT" style="width:16px; height:auto;"> GIT
-- <img src="https://go-skill-icons.vercel.app/api/icons?i=githubpages" alt="Logo GitHub Pages" style="width:16px; height:auto;"> GitHub Pages
+<img src="./assets/sketch/projet-gaming-campus-video.gif" alt="Aperçu du projet" width="700"/>
 
-# Fonctionnalités :
+## 🔧 Technologies utilisées
 
-- 🖥️ **Version Desktop** : Mise en place de la version pour les écrans de taille standard et grande taille.
-- 📱 **Version Mobile** : Adaptation de la maquette pour les petits écrans (smartphones).
-- 🔎 **Optimisation SEO** : Travail sur la structure du site pour le rendre plus visible dans les moteurs de recherche.
-- 🖼️ **Optimisation des images** : Toutes les images ont été redimensionnées, reformattées et compressées pour un meilleur temps de chargement et une efficacité maximale.
+- HTML5 sémantique
+- SASS (Mixins, variables,...)
 
-# Détails du code :
+## ✅ Ce que j’ai appris
 
-Le code a été structuré pour être facile à maintenir et à développer.
+- [x] Mieux structurer mon HTML
+- [x] Utiliser Flexbox / Grid sans pleurer
+- [x] Gérer les effets au survol (hover / transitions)
+- [x] Découvrir les améliorations de performances
 
-- **SASS** est utilisé pour la gestion des styles, permettant une hiérarchisation claire et une réutilisation efficace des styles grâce à des variables, des mixins et des partials.
+## 🛠️ À améliorer plus tard
 
-## Structure du projet :
+- ♿ Améliorer ma sémantique HTML
+- 💡 Mieux structurer mes projets
+- 🧪 S'entraîner à utiliser le fluid-responsive
 
-```plaintext
-/ (root)
-│
-├── index.html              # Page principale du site
-├── assets                  # Dossier pour les images, polices, maquettes, styles
-│   ├── fonts/              # Dossier pour les polices
-│   ├── img/                # Dossier pour les images
-│   ├── sketch/             # Dossier pour les maquettes
-│   ├── styles/             # Dossier contenant les fichiers CSS et SASS
-│   │   ├── components/     # Dossier pour les styles de composants
-│   │   ├── layouts/        # Dossier pour les styles de mise en page
-│   │   ├── _settings.scss  # Styles de base (typographie, variables)
-│   │   ├── index.css.map   # Fichier Source Map
-│   │   ├── index.css       # Fichier principal CSS généré depuis SASS
-│   │   ├── index.scss      # Fichier principal SASS
-├── readme.md               # Documentation du projet
-```
+## 👩‍💻 À propos de l’autrice
 
-# Aperçu
+> Code, café, et curiosité technique ☕💡  
+> Retrouve-moi ici → [github.com/jhauck67](https://github.com/jhauck67)
 
-Voici un aperçu du projet, que tu peux visualiser en ligne sur GitHub Pages :
-![Aperçu du projet](https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/projet-gaming-campus-video.gif)
+<p align="center" style="color: #888;">
+  <em>Merci d’avoir visité ce dépôt !<br>
+  🚂 En route vers de nouveaux projets web… 🚦</em>
+</p>
 
-## Lien vers le site en ligne
-
-Tu peux consulter la version en ligne de ce projet via GitHub Pages en cliquant sur le lien suivant :
-[Voir le site sur GitHub Pages](https://jhauck67.github.io/Projet-Gaming-Campus/)
-
-# Tests et vérifications
-
-## Tests fonctionnels et visuels
-
-### 📱Responsive design
-
-| Catégorie            | Test                                                             | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| -------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Affichage responsive | Vérification du bon affichage du layout (header, grille, marges) | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Bandes blanches en mobile et tablette sur Safari, Chrome et Firefox |
-| Menu burger          | Test de l'ouverture/fermeture du menu responsive                 | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Pas de menu prévu en mobile et tablette |
-| Orientation écran    | Adaptation du contenu au passage portrait/paysage                | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | RAS |
-| Police & Lisibilité  | Vérification de la taille, le contraste et la lisibilité         | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | RAS |
-
-### 🧭Navigation et interactions
-
-| Catégorie          | Test                                                    | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| ------------------ | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Navigation tactile | Vérification des zones cliquables (liens, boutons)      | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | RAS |
-| Liens internes     | Vérification que tous les liens mènent aux bonnes pages | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Pas de liens internes sur ce projet |
-
-### 🔲Formulaire
-
-| Catégorie   | Test                                             | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| ----------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Formulaires | Tests des inputs, validations, auto-remplissages | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Pas de formulaires dans ce projet |
-
-### 🕶️Mode sombre (si disponible)
-
-| Catégorie              | Test                                         | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| ---------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Mode sombre (si dispo) | Vérification du bon affichage en mode sombre | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Pas de mode sombre prévu |
-
-## Tests SEO et Accessibilité
-
-### #️⃣Balises `<meta>` et sémantiques
-
-| Catégorie                       | Test                                                             | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| ------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| SEO mobile                      | Vérification de la présence de la balise`<meta name="viewport">` | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Balise`<meta name="viewport">` présente |
-| Favicon                         | Vérification de la présence du favicon dans l'onglet             | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | Non-affichage de la favicon en mobile et tablette sur Chrome, Firefox et Edge |
-| Balises sémantique              | Inspecter le code HTML                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | [W3C validator HTML](https://validator.w3.org/#validate_by_input)                                                                                                                                                                                                                                                                                         | Code HTML ok |
-| PWA / Ajout à l'écran d'accueil | Si c'est un site PWA, test de l'installation                     | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> |              |
-
-### 🖼️Optimisation des images
-
-| Catégorie          | Test                                                             | Mobile (iPhone 12)                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tablet (iPad Air 4)                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Desktop (HP Envy x360)                                                                                                                                                                                                                                                                                                                                    | Observations |
-| ------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Performance        | Observer les temps de chargements du site                        | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | RAS |
-| Optimisation image | Test du chargement et de l'apparence des images (qualité, délai) | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=safari" alt="Logo Safari" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome" alt="Logo Chrome" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=firefox" alt="Logo Firefox" style="width:20px; height:auto;"> <img src="https://go-skill-icons.vercel.app/api/icons?i=edge" alt="Logo Edge" style="width:20px; height:auto;"> | RAS |
-
-### :accessibility:Accessibilité
-
-| Catégorie            | Test                                                                      | Mobile (iPhone 12) | Tablet (iPad Air 4) | Desktop (HP Envy x360)           | Observations |
-| -------------------- | ------------------------------------------------------------------------- | ------------------ | ------------------- | -------------------------------- | ------------ |
-| Accessibilité (a11y) | Vérification des attributs `alt`, les `aria-label`, la navigation clavier |                    |                     | [WAVE](https://wave.webaim.org/) | Test WAVE ok |
-
-### 🧪Audit SEO
-
-| Catégorie        | Test                                     | Mobile (iPhone 12) | Tablet (iPad Air 4) | Desktop (HP Envy x360)        | Observations |
-| ---------------- | ---------------------------------------- | ------------------ | ------------------- | ----------------------------- | ------------ |
-| Audit Lighthouse | Lancer un audit Lighthouse depuis Chrome |                    |                     | Lighthouse (extension chrome) | voir partie Audit Lighthouse |
-
-# Audit Lighthouse <img src="https://go-skill-icons.vercel.app/api/icons?i=lighthouse" alt="Logo Lighthouse" style="width:32px; height:auto;"> / Page Speed Insight <img src="https://cdn.worldvectorlogo.com/logos/google-pagespeed-insights-icon-2021-.svg" alt="Logo Page Speed Insight" style="width:32px; height:auto;">
-
-Le projet a été audité à l'aide de Lighthouse pour évaluer ses performances, son accessibilité, ses bonnes pratiques et son SEO. Voici les résultats :
-
-<img src="https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/insights.png" alt="Aperçu Insight" style="width:960px; height:auto;">
-
-## Performances ![Performances](https://img.shields.io/badge/Performances-95-brightgreen)  
-
-**First Contentful Paint** ![First Contentful Paint](https://img.shields.io/badge/FCP-2,3-brightgreen)  
-La métrique "First Contentful Paint" indique le moment où le premier texte ou la première image sont affichés.  
-\
-**Largest Contentful Paint** ![Largest Contentful Paint](https://img.shields.io/badge/LCP-2,4s-brightgreen)  
-La métrique "Largest Contentful Paint" indique le moment où le texte le plus long ou l'image la plus grande sont affichés.  
-\
-**Total Blocking Time** ![Total Blocking Time](https://img.shields.io/badge/TBT-0ms-brightgreen)  
-Somme en millisecondes de toutes les périodes entre le FCP et le délai avant interactivité, lorsque la durée de la tâche a dépassé 50 ms.  
-\
-**Cumulative Layout Shift** ![Cumulative Layout Shift](https://img.shields.io/badge/CLS-0,003-brightgreen)  
-Cumulative Layout Shift mesure le mouvement des éléments visibles dans la fenêtre d'affichage.  
-\
-**Speed Index** ![Speed Index](https://img.shields.io/badge/Speed_Index-2,3s-brightgreen)  
-La métrique "Speed Index" indique la rapidité avec laquelle le contenu d'une page est disponible.  
-\
-Le site est parfaitement optimisé, avec un temps de chargement ultra rapide, une absence totale de blocage et de décalage de mise en page, garantissant une expérience utilisateur fluide et réactive.
-
-## Accessibilité ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen)
-
-Le site est entièrement accessible, avec un score parfait de 100. Aucune erreur n'a été détectée sur les critères d'accessibilité, garantissant que le contenu est disponible pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques.
-
-## Bonnes pratiques ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen)
-
-Le projet respecte les meilleures pratiques en matière de sécurité et de fiabilité, avec un score de 100. Toutes les vérifications recommandées pour assurer la sécurité, telles que la gestion des en-têtes CSP et HSTS, ont été appliquées.
-
-## SEO ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
-
-Le site est optimisé pour le référencement naturel (SEO) avec un score de 100. Les bonnes pratiques SEO sont respectées, ce qui permet d'améliorer la visibilité du site sur les moteurs de recherche.
-
-# Améliorations possibles :
-
-- [x] Optimisation des éléments visuels :
-
-  - [x] Retrait des boutons : Retravailler les boutons pour améliorer leur interactivité et leur accessibilité. Ajouter des animations CSS ou JavaScript pour une meilleure expérience utilisateur.
-  - [x] Ajout d'ancres : Mettre en place des ancres pour une meilleure navigation entre les sections du site.
-  - [x] Optimiser les .png en .webp
-  - [x] Ajouter des attributs **width** et **height** aux balises `<img>`
-  - [x] Remplacer les balises `<i>` de Font Awesome par des `<img>` `.sgv`
-  - [x] Ajouter `font-display` pour améliorer la performance
-
-- [x] Modifications SEO friendly :
-
-  - [x] Balises <meta> : Auteur de la page pour améliorer la visibilité sur les moteurs de recherche.
-
-- [ ] Fichier sitemap.xml : Créer et soumettre un fichier sitemap pour faciliter l'indexation du site par les moteurs de recherche.
-
-- [x] Rechercher des propositions d'améliorations SEO Friendly
-
-- [x] Ajouter des balises Open Graph
-
-# Auteur :
-
-Jhauck67 (Développeuse web)
-
-# Liens utiles :
-
-[Portfolio de Jennifer](https://jhauck67.github.io/jenniferhauck/index.html)  
-[Voir le site en ligne](https://jhauck67.github.io/Projet-Gaming-Campus/)
+<div align="center">
+  <p><strong>jhauck67</strong><br>
+  Apprentie développeuse web</p>
+  <p>
+    <a href="https://github.com/jhauck67">GitHub</a> •
+    <a href="https://jhauck67.github.io/jhauck67/">Portfolio</a> •
+    <a href="https://codepen.io/jhauck67">Codepen.io</a>
+  </p>
+</div>

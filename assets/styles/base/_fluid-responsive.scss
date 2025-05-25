@@ -1,0 +1,100 @@
+// ====== ⚙️ [FLUID-RESPONSIVE] : Mixin pour tailles de police et espacements fluides ======
+
+// Pour le H1
+h1 {
+  font-size: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 2.1429)), 3.5rem);
+  margin: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.4286)), 3rem) 0;
+  min-height: 0vw;
+}
+
+// Pour le H2
+h2 {
+  font-size: clamp(0.95rem, calc(0.95rem + ((1vw - 0.2rem) * 0.5714)), 1.35rem);
+  margin-bottom: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+  min-height: 0vw;
+}
+
+// Pour le H3
+h3 {
+  font-size: clamp(0.8rem, calc(0.8rem + ((1vw - 0.2rem) * 0.4286)), 1.1rem);
+  min-height: 0vw;
+}
+
+// Pour le texte
+p,
+a {
+  font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.5)), 1.1rem);
+  margin-bottom: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+  min-height: 0vw;
+}
+
+// Dans le header
+.header-content {
+  padding: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem) 5%;
+  min-height: 0vw;
+}
+.logo {
+  font-size: clamp(1.2rem, calc(1.2rem + ((1vw - 0.2rem) * 0.4286)), 1.5rem);
+  min-height: 0vw;
+}
+.tagline {
+  font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.1429)), 0.85rem);
+  min-height: 0vw;
+}
+
+// Pour la navigation
+.main-nav ul {
+  gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+  min-height: 0vw;
+}
+.nav-link {
+  font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.2143)), 0.9rem);
+  padding: clamp(0.25rem, calc(0.25rem + ((1vw - 0.2rem) * 0.3571)), 0.5rem);
+  min-height: 0vw;
+}
+
+// Pour le hero
+.hero-content {
+  padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.4286)), 3rem);
+  min-height: 0vw;
+}
+
+.hero-text {
+  margin: 0 clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem)
+    clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
+  font-size: clamp(0.9rem, calc(0.9rem + ((1vw - 0.2rem) * 0.4286)), 1.2rem);
+  min-height: 0vw;
+}
+
+.cta-button {
+  padding: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem)
+    clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
+  min-height: 0vw;
+}
+
+// Pour les sections
+#integrations,
+#interactions,
+#experiments,
+#apps {
+  margin: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.4286)), 3rem)
+    clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
+  min-height: 0vw;
+}
+.cards-container {
+  width: clamp(300px, calc(18.75rem + ((1vw - 3.2px) * 62.5)), 1000px);
+  min-height: 0vw;
+}
+.description {
+  padding: clamp(0.25rem, calc(0.25rem + ((1vw - 0.2rem) * 0.3571)), 0.5rem)
+    clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+  min-height: 0vw;
+}
+
+//Pour le footer
+footer {
+  font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.2rem) * 0.2143)), 0.9rem);
+  margin: clamp(2rem, calc(2rem + ((1vw - 0.2rem) * 1.4286)), 3rem) auto 0;
+  padding-top: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.4286)), 2rem);
+  min-height: 0vw;
+}

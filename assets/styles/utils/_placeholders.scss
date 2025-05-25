@@ -1,0 +1,37 @@
+// ====== 🪟 [PLACEHOLDERS] : Structures CSS prêtes à l’emploi ======
+
+// Centrer un enfant unique (depuis le parent)
+%centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Utilisation : @extend %centerChild;
+
+// Centrage horizontal uniquement
+%centerX {
+  display: flex;
+  justify-content: center;
+}
+// Utilisation : @extend %centerX;
+
+// Centrage vertical uniquement
+%centerY {
+  display: flex;
+  align-items: center;
+}
+// Utilisation : @extend %centerY;
+
+// Cacher un texte à l'écran mais le garder pour l'accessibilité
+%visuallyHidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+// Utilisation : @extend %visuallyHidden;

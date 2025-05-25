@@ -1,0 +1,30 @@
+// ====== 🧩 [MIXINS] : Blocs de code utilisable avec ou sans variable ======
+
+// Aligner plusieurs éléments
+@mixin alignChildren($justify: space-between) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+// Utilisation : @include alignChildren(space-around);
+
+// Centrer un bloc avec largeur contenue
+@mixin maxWidth($margin: 0) {
+  width: 85%;
+  max-width: 1200px;
+  margin: $margin auto;
+}
+// Utilisation : @include maxWidth(map-get($spacings, m));
+
+// Mixin responsive
+@mixin respond($key) {
+  $value: map-get($breakpoints, $key);
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "⛔️ Breakpoint `#{$key}` non défini dans la map !";
+  }
+}
+// Utilisation : @include respond(tablet) {...};

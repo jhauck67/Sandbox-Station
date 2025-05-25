@@ -1,0 +1,37 @@
+.site-header {
+  position: relative;
+  background-color: $black;
+  overflow: hidden;
+}
+
+.header-content {
+  @include alignChildren;
+  position: relative;
+  z-index: map-get($z-index, content);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  @extend %centerY;
+}
+
+.logo-bracket {
+  font-family: $font-title;
+  color: $primary;
+  font-weight: 900;
+}
+
+.logo-text {
+  font-family: $font-title;
+  font-weight: 700;
+  margin: 0 map-get($spacings, xs);
+}
+
+.tagline {
+  color: $grey;
+  margin-top: map-get($spacings, -xs);
+}

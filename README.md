@@ -1,36 +1,33 @@
 <div align="center">
-  <h1>🚀 Nom du Projet</h1>
+  <h1>🚀 Intégration La Montagne</h1>
   <p>Une application web interactive et responsive</p>
   
   <p align="center">
   <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white" alt="HTML Badge"/>
   <img src="https://img.shields.io/badge/CSS-%231572B6.svg?style=flat&logo=css3&logoColor=white" alt="CSS Badge"/>
   <img src="https://img.shields.io/badge/Sass-%23CC6699.svg?style=flat&logo=sass&logoColor=white" alt="Sass Badge"/>
-  <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black" alt="JS Badge"/>
   <img src="https://img.shields.io/badge/Statut-Terminé-brightgreen.svg" alt="Statut Badge"/>
 </p>
   
   <p>
-  <!-- TODO Modifier le chemin de l'ancre -->
-    <a href="https://jhauck67.github.io/Sandbox-Station/projects/Nom-du-Projet/demo/index.html">Voir la démo</a> •
+    <a href="https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/demo/index.html">Voir la démo</a> •
     <a href="#-présentation-rapide">Présentation projet</a> •
     <a href="#-ce-que-jai-appris">Ce que j'ai appris</a> •
     <a href="#-à-propos-de-lautrice">À propos</a>
   </p>
   
-  <img src="./assets/sketch/screenshot.png" alt="Aperçu du projet" width="600" />
+  <img src="./assets/sketch/apercu.png" alt="Aperçu du projet" width="600" />
 </div>
 
 ## 🧩 Présentation rapide
 
 Petit projet codé avec amour 💻✨  
-Objectif : **[décrire le but du projet]**  
-Contexte : **[formation, défi, tuto, perso...]**  
-Contraintes : **[design imposé, responsive, animations, etc.]**
+Objectif : Intégration au pixel près d'une maquette  
+Contexte : Formation HTML/CSS/SASS  
+Contraintes : Respecter la maquette, être responsive.
 
-<!-- TODO Modifier le chemin de l'ancre -->
 
-🔗 [Voir la démo dans le navigateur](./index.html)
+🔗 [Voir la démo dans le navigateur](https://jhauck67.github.io/Sandbox-Station/projects/La-Montagne/demo/index.html)
 
 ## 🖼️ Aperçu
 

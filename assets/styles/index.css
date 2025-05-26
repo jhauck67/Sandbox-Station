@@ -580,6 +580,11 @@ footer {
   font-size: clamp(0.8rem, 0.8rem + (1vw - 0.2rem) * 0.5714, 1.2rem);
   min-height: 0vw;
 }
+@media (max-width: 770px) {
+  .resources .resource-links a {
+    display: inline-block;
+  }
+}
 .resources .resource-links a:hover {
   background: #7f8c8d;
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);

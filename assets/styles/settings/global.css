@@ -1,0 +1,70 @@
+/* TITRE : [STYLE GENERAL] : Style du body, du texte, etc... */
+
+/* ###### Style du body ###### */
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  background: var(--background-color-primary);
+  overflow-x: hidden;
+  font-family: var(--font-text);
+  color: var(--color-text-primary);
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* ###### Style des liens ###### */
+a,
+a:visited {
+  display: inline-block;
+  color: var(--color-accent-primary);
+  font-family: var(--font-text);
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all var(--transition-normal);
+}
+a:hover {
+  color: var(--color-hover);
+  text-shadow: var(--shadow-color);
+  transform: scale(1.05);
+}
+
+/* ###### Style du texte ###### */
+
+/* (1) Les titres */
+
+/* ¤ Style des titres en commun */
+h1,
+h2,
+h3 {
+  color: var(--color-text-primary);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* ¤ Style des titres en particulier */
+h1 {
+  text-shadow: var(--shadow-color);
+  font-weight: 800;
+}
+h2 {
+  color: var(--color-accent-primary);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+h3 {
+  font-weight: 600;
+}
+
+/* (2) Les paragraphes */
+.code-text {
+  color: var(--color-text-primary);
+  font-family: var(--font-code);
+  font-weight: 300;
+}
+.tagline {
+  color: var(--color-text-secondary);
+}

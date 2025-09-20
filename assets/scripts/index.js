@@ -46,4 +46,12 @@ moveLight()
 // La fonction se rejoue avec un intervalle de ${speed}
 setInterval(moveLight, speed);
 
+// TITRE : [FOOTER] : Current Year automatique //
+const copyrightYear = document.getElementById('current-year');
+const currentDate = new Date();
 
+// On récupère l'année en cours
+const currentYear = currentDate.getFullYear();
+
+// On injecte cette valeur dans le span.current-year
+copyrightYear.textContent = currentYear;

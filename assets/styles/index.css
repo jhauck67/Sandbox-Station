@@ -1,11 +1,26 @@
 /* TITRE : [BARRE DE NAVIGATION] */
 #nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all var(--transition-normal);
+  z-index: 10;
+  width: 100%;
+  background: hsl(0, 0%, 3%, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem) 5%;
   min-height: 0vw;
-  z-index: 10;
 }
 
 /* ########## [LOGO] ########## */
@@ -127,6 +142,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 /* ########## [HERO] ########## */
@@ -134,7 +150,7 @@ header {
   position: relative;
   z-index: 3;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   text-align: center;
   padding-bottom: clamp(2rem, 2rem + (1vw - 0.2rem) * 1.4286, 3rem);
   min-height: 0vw;

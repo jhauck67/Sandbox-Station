@@ -9,8 +9,25 @@ burgerIcon.addEventListener('click', () => {
     navbar.classList.toggle('open');
 });
 
+// ###### NAVBAR AU SCROLL ###### //
+const nav = document.querySelector('nav');
+let scroll = 0;
 
-// TITRE : [LIGHT] : Animation "light" du header //
+// Au scroll, on compare la valeur de scroll à celle stockée :
+//     - elle est plus grande, on descend
+//     - elle est plus petite, on monte
+window.addEventListener('scroll', (e) => {
+    if (window.scrollY > scroll && window.scrollY > 40) {
+        nav.style.transform = "translate(-50%, -110%)";
+    } else {
+        nav.style.transform = "translate(-50%, 0)";
+    };
+    // On stocke la nouvelle valeur de scroll
+    scroll = window.scrollY;
+});
+
+
+// TITRE : [HEADER] : Animation "light" du header //
 const lights = document.querySelectorAll('.light');
 const speed = 5000;
 

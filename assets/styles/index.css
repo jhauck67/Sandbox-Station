@@ -128,22 +128,11 @@ header {
   align-items: center;
   justify-content: center;
 }
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 20% 50%, var(--transparent10) 0%, transparent 20%),
-    radial-gradient(circle at 80% 30%, var(--transparent10) 0%, transparent 15%);
-  z-index: 1;
-}
 
 /* ########## [HERO] ########## */
 .header-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -184,6 +173,19 @@ h1 {
 .illustration {
   width: 90%;
   margin: 0 auto;
+}
+
+/* (4) L'animation de fond : .light */
+.light {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  top: var(--top);
+  left: var(--left);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(var(--transparent10) 0%, transparent 50%);
+  z-index: 1;
 }
 
 /* TITRE : [MAIN]  */

@@ -1,3 +1,8 @@
+// TITRE [IMPORT DES MODULES] //
+import { cardsInProjects } from './projects.js';
+cardsInProjects();
+
+
 // TITRE : [NAVBAR] : Animation de la barre de navigation //
 
 // ###### BURGER MENU ###### //
@@ -45,6 +50,7 @@ moveLight()
 
 // La fonction se rejoue avec un intervalle de ${speed}
 setInterval(moveLight, speed);
+
 
 // TITRE : [FOOTER] : Current Year automatique //
 const copyrightYear = document.getElementById('current-year');

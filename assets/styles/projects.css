@@ -33,7 +33,8 @@
   padding: 2rem;
   scroll-snap-type: x mandatory;
   scroll-padding: 1rem;
-  overflow-x: scroll;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   width: clamp(300px, 18.75rem + (1vw - 3.2px) * 62.5, 1000px);
   min-height: 0vw;
 }

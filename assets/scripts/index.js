@@ -8,17 +8,19 @@ cardsInProjects();
 // ###### BURGER MENU ###### //
 const burgerIcon = document.getElementById('icon-burger');
 const navbar = document.querySelector('.navbar');
+const links = document.querySelectorAll('.nav-link');
+console.log(links);
 
+// Au click sur l'icone, le menu s'ouvre ou se ferme.
 burgerIcon.addEventListener('click', () => {
     navbar.classList.toggle('open');
 })
 
-window.addEventListener('click', () => {
-    // On ferme la navbar en cliquant sur un lien ou ailleurs sur la page
-    if (navbar.classList.contains('open')) { // On vérifie seulement si le menu est ouvert
+links.forEach(link => {
+    link.addEventListener('click', () => {
         navbar.classList.remove('open');
-    }
-});
+    })
+})
 
 
 // ###### NAVBAR AU SCROLL ###### //

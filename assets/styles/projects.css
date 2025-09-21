@@ -1,28 +1,5 @@
 /* TITRE : [PROJECTS] = Style du Card Container, des Cards, ... */
 
-/* ###### BACKGROUND BY ID ###### */
-#gaming-campus {
-  background: var(--card-bg-img) center/cover;
-}
-#run {
-  background: var(--card-bg-img) center/cover;
-}
-#la-montagne {
-  background: var(--card-bg-img) center/cover;
-}
-#le-resto {
-  background: var(--card-bg-img) center/cover;
-}
-#interactions-img {
-  background: var(--card-bg-img) center/cover;
-}
-#experiments-img {
-  background: var(--card-bg-img) center/cover;
-}
-#apps-img {
-  background: var(--card-bg-img) center/cover;
-}
-
 /* ###### .CARDS-CONTAINER ###### */
 
 /* (1) Style général du container */
@@ -58,6 +35,10 @@
   flex: 0 0 auto;
   width: 300px;
   height: 400px;
+  background-image: var(--card-bg-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   border-radius: var(--radius-s);
   border: 1px solid var(--color-border);

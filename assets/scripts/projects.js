@@ -59,7 +59,7 @@ const cardGenerator = (projectsArray, container) => {
 
 // ###### [FETCH JSON] = Récupérer les données
 export const cardsInProjects = () => {
-    fetch('/assets/data/projects.json')
+    fetch('https://github.com/jhauck67/Sandbox-Station/blob/siteJS/assets/data/projects.json')
     .then(response => response.json())
     .then(data => {
         // (1) On pointe les conteneurs dans le DOM

@@ -97,7 +97,7 @@
   transform: translateY(85%);
 }
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .description {
     transform: translate(0%);
   }
@@ -145,16 +145,16 @@ span.tag {
   color: var(--neutral5);
 }
 /* Background par tag */
-.html-tag {
+.tag.html-tag {
   background: hsl(13 77% 67%);
 }
-.css-tag {
+.tag.css-tag {
   background: hsl(270 50% 55%);
 }
-.sass-tag {
+.tag.sass-tag {
   background: hsl(330 50% 75%);
 }
-.js-tag {
+.tag.js-tag {
   background: hsl(53 93% 69% / 1);
 }
 

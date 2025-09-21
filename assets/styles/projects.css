@@ -140,10 +140,22 @@ h3::after {
 span.tag {
   border: 1px solid var(--neutral5);
   border-radius: var(--radius-l);
-  background: var(--neutral3);
   margin-right: 1rem;
   padding: 0.25rem 1rem;
   color: var(--neutral5);
+}
+/* Background par tag */
+.html-tag {
+  background: hsl(13 77% 67%);
+}
+.css-tag {
+  background: hsl(270 50% 55%);
+}
+.sass-tag {
+  background: hsl(330 50% 75%);
+}
+.js-tag {
+  background: hsl(53 93% 69% / 1);
 }
 
 /* (5) Les Liens */

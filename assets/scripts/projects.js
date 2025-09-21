@@ -30,6 +30,7 @@ const cardGenerator = (projectsArray, container) => {
                     // On boucle sur chaque tag pour les créer.
                     project.projectTags.forEach(tag => {
                         const tagElement = elementCreator('span', 'tag');
+                        tagElement.classList.add(tag.toLowerCase() + "-tag");
                         tagElement.textContent = tag;
                         tagsContainer.appendChild(tagElement);
                     });

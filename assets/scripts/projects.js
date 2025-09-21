@@ -14,7 +14,7 @@ const cardGenerator = (projectsArray, container) => {
         // ¤.card
         const card = elementCreator('article', 'card', `${project.id}`);
         // On construit le chemin de l'image
-        const imagePath = `/assets/img/${project.projectImage}`;
+        const imagePath = `https://raw.githubusercontent.com/jhauck67/Sandbox-Station/refs/heads/siteJS/assets/img/${project.projectImage}`;
         // Et on l'injecte en tant que background
         card.style.setProperty('--card-bg-img', `url('${imagePath}')`);
             // ¤ .description

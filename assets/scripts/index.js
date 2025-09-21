@@ -9,10 +9,16 @@ cardsInProjects();
 const burgerIcon = document.getElementById('icon-burger');
 const navbar = document.querySelector('.navbar');
 
-// Au click, on applique ou pas la classe .open
-burgerIcon.addEventListener('click', () => {
-    navbar.classList.toggle('open');
+window.addEventListener('click', (e) => {
+    // On toggle la navbar en cliquant sur le burger ou la croix    
+    if (e.target.closest('#icon-burger')) {
+        navbar.classList.toggle('open');
+    // On ferme la navbar en cliquant sur un lien ou ailleurs sur la page
+    } else if (navbar.classList.contains('open')) { // On vérifie seulement si le menu est ouvert
+        navbar.classList.remove('open');
+    }
 });
+
 
 // ###### NAVBAR AU SCROLL ###### //
 const nav = document.querySelector('nav');

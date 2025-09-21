@@ -1,20 +1,12 @@
 {
     "integrations": [
         {
-            "id": "gaming-campus",
-            "projectName": "Gaming Campus",
-            "projectDescription": "Intégration fidèle et responsive de la maquette Gaming Campus, respectant la charte graphique et optimisée pour une expérience utilisateur fluide.",
+            "id": "le-resto",
+            "projectName": "Le Resto",
+            "projectDescription": "Intégration précise et responsive de la maquette Le Resto, optimisée pour une navigation fluide et intuitive.",
             "projectTags": ["HTML", "SASS"],
-            "projectLink": "./projects/Gaming-Campus/page-projet-gaming-campus.html",
-            "projectImage": "page-accueil-gaming-campus.webp"
-        },
-        {
-            "id": "run",
-            "projectName": "Run",
-            "projectDescription": "Intégration responsive et soignée de la maquette Run, respectant les standards web et optimisée performance.",
-            "projectTags": ["HTML", "SASS"],
-            "projectLink": "./projects/Run/page-projet-run.html",
-            "projectImage": "page-accueil-run.webp"
+            "projectLink": "./projects/Le-Resto/page-projet-le-resto.html",
+            "projectImage": "page-accueil-le-resto.webp"
         },
         {
             "id": "la-montagne",
@@ -25,12 +17,20 @@
             "projectImage": "page-accueil-la-montagne.webp"
         },
         {
-            "id": "le-resto",
-            "projectName": "Le Resto",
-            "projectDescription": "Intégration précise et responsive de la maquette Le Resto, optimisée pour une navigation fluide et intuitive.",
+            "id": "run",
+            "projectName": "Run",
+            "projectDescription": "Intégration responsive et soignée de la maquette Run, respectant les standards web et optimisée performance.",
             "projectTags": ["HTML", "SASS"],
-            "projectLink": "./projects/Le-Resto/page-projet-le-resto.html",
-            "projectImage": "page-accueil-le-resto.webp"
+            "projectLink": "./projects/Run/page-projet-run.html",
+            "projectImage": "page-accueil-run.webp"
+        },
+        {
+            "id": "gaming-campus",
+            "projectName": "Gaming Campus",
+            "projectDescription": "Intégration fidèle et responsive de la maquette Gaming Campus, respectant la charte graphique et optimisée pour une expérience utilisateur fluide.",
+            "projectTags": ["HTML", "SASS"],
+            "projectLink": "./projects/Gaming-Campus/page-projet-gaming-campus.html",
+            "projectImage": "page-accueil-gaming-campus.webp"
         }
     ],
     "interactions": [

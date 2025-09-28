@@ -55,12 +55,12 @@
     ],
     "apps": [
         {
-            "id": "apps-img",
-            "projectName": "En construction",
-            "projectDescription": "Une app se compile dans un coin de mon cerveau (et de mon repo). Une petite fonctionnalité, un grand potentiel.",
+            "id": "json-stringify",
+            "projectName": "JSON Stringify",
+            "projectDescription": "Convertir instantanément n'importe quel bloc de code ou de texte en une chaîne de caractères (string) JSON valide, puis copier le résultat dans le presse-papiers de l'utilisateur en un seul clic.",
             "projectTags": ["HTML", "SASS", "JS"],
-            "projectLink": "",
-            "projectImage": "apps.webp"
+            "projectLink": "./projects/Gaming-Campus/page-projet-json-stringify.html",
+            "projectImage": "page-accueil-json-stringify.webp"
         }
     ]
 }

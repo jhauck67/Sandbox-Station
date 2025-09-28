@@ -53,7 +53,6 @@ textarea {
 :focus {
   outline: none;
 }
-
 /* ¤ Focus custom accessible */
 :focus-visible {
   outline: 2px solid var(--primary-color); /* ta couleur personnalisée par exemple */

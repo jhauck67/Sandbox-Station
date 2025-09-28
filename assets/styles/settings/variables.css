@@ -1,29 +1,27 @@
 /* TITRE : [VARIABLES] : Variables fonts, couleurs, espacements, etc... */
 
 /* ###### TYPOGRAPHIE ###### */
-/* (1) Import des fonts */
 @font-face {
-  font-family: 'Orbitron';
-  src: url(../../fonts/Orbitron-VariableFont_wght.ttf);
+  font-family: 'Caveat';
+  src: url(../../fonts/Caveat-VariableFont_wght.ttf);
   font-display: swap;
 }
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url(../../fonts/IBMPlexSans-VariableFont_wdth-wght.ttf);
+  font-family: 'OpenSans';
+  src: url(../../fonts/OpenSans-VariableFont_wdth\wght.ttf);
   font-display: swap;
 }
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url(../../fonts/JetBrainsMono-VariableFont_wght.ttf);
+  font-family: 'Merriweather';
+  src: url(../../fonts/Merriweather-VariableFont_opsz\wdth\wght.ttf);
   font-display: swap;
 }
 
 /* ########## COLORS ########## */
 :root {
-  /* (1) Couleur de base : */
-  --hue: 111;
-  --sat: 100%;
-  --light: 54%;
+  --hue: 33;
+  --sat: 90%;
+  --light: 51%;
 
   /* (2) Palette des couleurs : */
   /* ¤ Primary Color */
@@ -115,9 +113,9 @@
   --background-color-secondary: var(--neutral4);
 
   /* (2) Typographie : */
-  --font-title: 'Orbitron', sans-serif;
-  --font-text: 'IBM Plex Sans', sans-serif;
-  --font-code: 'JetBrains Mono', monospace;
+  --font-title: 'OpenSans', sans-serif;
+  --font-text: 'Merriweather', serif;
+  --font-cursive: 'Caveat', cursive;
 
   /* (3) Couleur de texte */
   --color-text-primary: var(--neutral0);
@@ -126,10 +124,16 @@
   /* (4) Couleur d'interactivité */
   /* ¤ Accentuation : */
   --color-accent-primary: var(--primary-color);
+  --color-accent-primary-dark: var(--primary-color-dark);
+  --color-accent-primary-light: var(--primary-color-light);
 
   /* ¤ Hover : */
-  --color-hover: var(--transparent90); /* effet au survol */
+  --color-hover-button: var(--transparent90); /* effet au survol des lien et bouttons*/
+  --color-hover-button: var(--transparent60); /* effet au survol des li*/
 
   /* ¤ Border : */
   --color-border: var(--transparent30);
+
+  /* ¤ Light Separator */
+  --color-separator-light: var(var(--transparent10));
 }

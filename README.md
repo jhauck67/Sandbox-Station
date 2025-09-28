@@ -6,8 +6,7 @@
     <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white" />
     <img src="https://img.shields.io/badge/CSS-%23663399.svg?style=flat&logo=css&logoColor=white" />
     <img src="https://img.shields.io/badge/Javascript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black" />
-    <img src="https://img.shields.io/badge/UI-Terminal%20like-%232d2d2d.svg?style=flat" />
-    <img src="https://img.shields.io/badge/Statut-en%20cours-ffcc00.svg" />
+    <img src="https://img.shields.io/badge/Statut-en%20cours-10B73C.svg" />
   </p>
 
   <p>

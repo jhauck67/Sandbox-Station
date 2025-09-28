@@ -16,7 +16,7 @@ const cardGenerator = (projectsArray, container) => {
         // On construit le chemin de l'image
         const imagePath = `https://raw.githubusercontent.com/jhauck67/Sandbox-Station/refs/heads/siteJS/assets/img/${project.projectImage}`;
         // Et on l'injecte en tant que background
-        card.style.setProperty('--card-bg-img', `url('${imagePath}')`);
+        card.style.setProperty('--card-bg-img', `url(${imagePath})`);
             // ¤ .description
             const description = elementCreator('div', 'description');
                 // ¤ h3
@@ -58,7 +58,7 @@ const cardGenerator = (projectsArray, container) => {
 };
 
 
-// ###### [FETCH JSON] = Récupérer les données
+// ###### [FETCH JSON] = Récupérer les données. ###### //
 export const cardsInProjects = () => {
     fetch('https://raw.githubusercontent.com/jhauck67/Sandbox-Station/refs/heads/siteJS/assets/data/projects.json')
     .then(response => response.json())

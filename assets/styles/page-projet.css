@@ -54,7 +54,7 @@ h1 {
 /* ###### Project Card ###### */
 .project-card {
   max-width: 1100px;
-  margin: var(--spacing-l) var(--spacing-m);
+  margin: var(--spacing-l) auto;
   padding: 1.5rem 1rem;
   border: 1px solid var(--neutral4);
   border-radius: var(--radius-m);

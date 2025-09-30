@@ -1,20 +1,12 @@
-/** ----------------- body ------------------- */
-body {
-  width: 100dvw;
-  min-height: 100dvh;
-  background: url(../img/pictures/image.webp) center/cover;
-  overflow-x: hidden;
-  font-family: var(--font-text);
-  color: var(--color-text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.toggle-container {
+  margin: var(--spacing-l) 0;
 }
 
 /** ----------------- main ------------------- */
 main {
   width: 90%;
   margin: 0 auto;
+  padding: var(--spacing-l);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +49,8 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#submit-btn {
+#submit-btn,
+#toggle-json {
   background-color: var(--color-accent-primary);
   color: var(--neutral5);
   border: 1px solid hsla(0, 0%, 3%, 0.6);

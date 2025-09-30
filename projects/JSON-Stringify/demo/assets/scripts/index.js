@@ -1,10 +1,24 @@
 // VARIABLES                                     
+const toggleButton = document.getElementById('toggle-json');
 const submitButton = document.getElementById('submit-btn');
 const resetButton = document.getElementById('reset-btn');
 const textArea = document.getElementById('target');
 
-
 // EVENT LISTENER                                
+//*-------------- Toggle Button -----------------
+toggleButton.addEventListener('click', () => {
+    textArea.classList.toggle('parse');
+    if(textArea.classList.contains('parse')) {
+        textArea.setAttribute('placeholder', "Coller votre chaîne de caractère JSON ici.");
+        submitButton.textContent = "Parse JSON";
+    } else {
+        textArea.setAttribute('placeholder', "Coller votre code ici.");
+        submitButton.textContent = "Stringify JSON";
+    }
+});
+
+
+//*---------- JSON Stringify/Parse --------------
 // Au click, convertit le code en string pour JSON et le copie dans le presse papier.
 submitButton.addEventListener('click', () => {
     // On vérifie s'il y a quelque chose dans la textarea
@@ -14,8 +28,13 @@ submitButton.addEventListener('click', () => {
     };
     // On récupère la valeur de la textarea
     const inputCode = textArea.value;
-    // On convertit le code en string JSON
-    const outputCode = JSON.stringify(inputCode);
+    // On convertit le code en string JSON ou la string JSON en code
+    let outputCode;
+    if(textArea.classList.contains('parse')) {
+        outputCode = JSON.parse(inputCode);
+    } else {
+        outputCode = JSON.stringify(inputCode);
+    };
     // On l'affiche dans la textarea
     textArea.value = outputCode;
     // On copie la nouvelle valeur dans le presse papier

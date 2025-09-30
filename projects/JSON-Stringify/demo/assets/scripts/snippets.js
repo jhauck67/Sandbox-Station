@@ -78,8 +78,14 @@ checkSnippetBtn.addEventListener('click', () => {
 <html>
     <head>
         <style>
-            html {
-                height: 100%;
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 100dvw;
+                height: 100dvh;
                 display: flex;
                 align-items: center;
                 justify-content: center;

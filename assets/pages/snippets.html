@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- TITRE : [HEAD] : Titre, Meta Datas et Styles -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d0d0d" />
+
+    <!-- ###### [META TAGS PAGE] ###### -->
+    <!-- (1) Balise title -->
+    <title>JSON Stringifier 🧪 Votre Partenaire de Code</title>
+
+    <!-- (2) Meta Description -->
+    <meta
+      name="description"
+      content="Convertissez instantanément n'importe quel bloc de code en une chaîne de caractères (string) formatée pour JSON. Rapide, propre et copié dans le presse-papiers."
+    />
+
+    <!-- (3) Icons system -->
+    <!-- ¤ favicon.ico -->
+    <link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico" />
+    <!-- ¤ favicon.svg -->
+    <link rel="icon" type="image/svg+xml" href="../img/icons/favicon.svg" />
+    <!-- ¤ favicon.png -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon16x16.png" />
+    <!-- ¤ Apple-touch-icon.png -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png" />
+
+    <!-- (4) Auteur -->
+    <meta name="author" content="Jhauck67" />
+
+    <!-- ###### [OPENGRAPH META TAGS] ###### -->
+    <!-- Remplir les Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://jhauck67.github.io/Sandbox-Station/projects/JSON-Stringify/demo/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JSON Stringifier 🧪 Votre Partenaire de Code" />
+    <meta
+      property="og:description"
+      content="Convertissez instantanément n'importe quel bloc de code en une chaîne de caractères (string) formatée pour JSON. Rapide, propre et copié dans le presse-papiers."
+    />
+    <meta
+      property="og:image"
+      content="https://jhauck67.github.io/Sandbox-Station./sketch/opengraph.png"
+    />
+
+    <!-- ###### [FEUILLE DE STYLE CSS] ###### -->
+    <!-- Lien vers la feuille de style css -->
+    <link rel="stylesheet" href="../styles/settings/reset.css" />
+    <link rel="stylesheet" href="../styles/settings/variables.css" />
+    <link rel="stylesheet" href="../styles/settings/global.css" />
+    <link rel="stylesheet" href="../styles/snippets.css" />
+
+    <!-- ###### [PRELOAD DES IMAGES] ###### -->
+    <!-- Preload des images -->
+    <!-- permet de précharger les images importantes -->
+    <link rel="preload" href="../img/pictures/image.webp" as="image" type="image/webp" />
+  </head>
+
+  <!-- TITRE : [BODY] : Début du site -->
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../../index.html">Stringify JSON</a></li>
+        <li><a href="#">Snippets JSON</a></li>
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+    <h1>Snippets to JSON Objects</h1>
+    <main>
+      <div class="main-left">
+        <section class="form-section">
+          <form class="form-container">
+            <div class="section section1">
+              <h2>Meta-Données du snippets</h2>
+              <div class="id-container">
+                <label for="id">id :</label>
+                <input type="number" name="id" id="id" disabled />
+              </div>
+              <div class="name-container">
+                <label for="name">snippetName :</label>
+                <input type="text" id="name" autocomplete="off" />
+              </div>
+              <div class="language-container">
+                <label for="language">snippetLanguage :</label>
+                <select name="snippetLanguage" id="language">
+                  <option value="" selected disabled>--Choisir un language--</option>
+                  <option value="HTML/CSS">HTML/CSS</option>
+                  <option value="Javascript">Javascript</option>
+                </select>
+              </div>
+              <div class="date-container">
+                <label for="date">snippetDate :</label>
+                <input type="date" name="snippetDate" id="date" />
+              </div>
+              <div class="category-container">
+                <label for="category">snippetCategory</label>
+                <select name="snippetCategory" id="category">
+                  <option value="" selected disabled>--Choisir une catégorie--</option>
+                  <option value="navbar">Navbar</option>
+                  <option value="button">Button</option>
+                  <option value="scrollbar">Scrollbar</option>
+                  <option value="gallery">Gallery</option>
+                  <option value="card">Card</option>
+                  <option value="animation">Animation</option>
+                  <option value="form">Form</option>
+                  <option value="modal">Modal</option>
+                  <option value="dropdown">Dropdown</option>
+                  <option value="toggle">Toggle</option>
+                  <option value="loader">Loader</option>
+                  <option value="shadow">Shadow</option>
+                  <option value="tooltip">Tooltip</option>
+                </select>
+              </div>
+              <div class="screenshot-container">
+                <label for="screenshot">snippetScreenshot (en .webp)</label>
+                <input type="text" name="snippetScreenshot" id="screenshot" />
+              </div>
+            </div>
+            <div class="section section2">
+              <h2>Source du Snippet</h2>
+              <div class="source-title-container">
+                <label for="source-title">snippetSourceTitle :</label>
+                <input type="text" name="snippetSourceTitle" id="source-title" />
+              </div>
+              <div class="source-link-container">
+                <label for="source-link">snippetSourceLink :</label>
+                <input type="url" name="snippetSourceLink" id="source-link" />
+              </div>
+            </div>
+            <div class="section section3">
+              <h2>Code du Snippet</h2>
+              <div class="html-code-container">
+                <label for="html-code">snippetHTML :</label>
+                <textarea
+                  name="snippetHTML"
+                  id="html-code"
+                  placeholder="Entrer le code HTML ici"
+                ></textarea>
+              </div>
+              <div class="css-code-container">
+                <label for="css-code">snippetCSS :</label>
+                <textarea
+                  name="snippetCSS"
+                  id="css-code"
+                  placeholder="Entrer le code CSS ici"
+                ></textarea>
+              </div>
+              <div class="js-code-container">
+                <label for="js-code">snippetJS :</label>
+                <textarea
+                  name="snippetJS"
+                  id="js-code"
+                  placeholder="Entrer le code JS ici"
+                ></textarea>
+              </div>
+            </div>
+            <div class="buttons-container section">
+              <button type="button" id="checkSnippetBtn">Vérifier le snippet</button>
+              <button type="button" id="resetFormBtn">Reset</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="main-right">
+        <section class="iframe-section">
+          <h2>Aperçu du code</h2>
+          <div class="iframe-container">
+            <iframe title="view-code" id="view-code"></iframe>
+          </div>
+          <div class="buttons-container">
+            <button type="button" id="generateJsonBtn">Générer l'objet JSON</button>
+            <button type="button" id="resetFormBtn">Reset</button>
+          </div>
+        </section>
+        <section class="object-json">
+          <h2>Objet JSON</h2>
+          <textarea id="object-json-view"></textarea>
+        </section>
+      </div>
+    </main>
+    <!-- TITRE : [SCRIPT JS] -->
+    <script type="module" src="../scripts/snippets.js"></script>
+  </body>
+</html>

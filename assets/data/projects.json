@@ -35,12 +35,12 @@
     ],
     "interactions": [
         {
-            "id": "interactions-img",
-            "projectName": "En préparation",
-            "projectDescription": "Un futur projet JavaScript est en train de manipuler le DOM dans l’ombre… Prépare-toi à cliquer.",
+            "id": "the-devs-toolkit",
+            "projectName": "The Dev's Toolkit",
+            "projectDescription": "Organise, visualise et gère tes snippets, palettes, polices et SVGs dans un espace personnel et modulable.",
             "projectTags": ["HTML", "SASS", "JS"],
-            "projectLink": "",
-            "projectImage": "interactions.webp"
+            "projectLink": "./projects/BIGPROJECTS.The-Devs-Toolkit/page-projet-the-devs-toolkit.html",
+            "projectImage": "page-accueil-the-devs-toolkit.webp"
         }
     ],
     "experiments": [

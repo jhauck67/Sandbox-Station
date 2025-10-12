@@ -39,8 +39,16 @@
             "projectName": "The Dev's Toolkit",
             "projectDescription": "Organise, visualise et gère tes snippets, palettes, polices et SVGs dans un espace personnel et modulable.",
             "projectTags": ["HTML", "SASS", "JS"],
-            "projectLink": "./projects/BIGPROJECTS.The-Devs-Toolkit/page-projet-the-devs-toolkit.html",
+            "projectLink": "./projects/BIGPROJECTS/The-Devs-Toolkit/page-projet-the-devs-toolkit.html",
             "projectImage": "page-accueil-the-devs-toolkit.webp"
+        },
+        {
+            "id": "forgekit",
+            "projectName": "ForgeKit",
+            "projectDescription": "Générateur rapide de projets front-end avec polices, couleurs, favicons et structure prête à l’emploi.",
+            "projectTags": ["HTML", "SASS", "JS"],
+            "projectLink": "./projects/BIGPROJECTS/ForgeKit/page-projet-forgekit.html",
+            "projectImage": "page-accueil-toolkit.webp"
         }
     ],
     "experiments": [

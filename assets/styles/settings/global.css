@@ -6,7 +6,8 @@
 body {
   width: 100dvw;
   min-height: 100dvh;
-  background: var(--color-bg-neutral);
+  background: var(--color-bg-darker);
+  padding: var(--space-lg);
   color: var(--color-text-neutral);
   font-family: var(--font-text);
   font-size: var(--fs-md);
@@ -52,12 +53,13 @@ h6 {
 
 /* Style des titres en particulier */
 h1 {
+  font-family: var(--font-logo);
+  color: var(--color-text-neutral);
   font-size: var(--fs-2xl);
-  margin-bottom: var(--space-lg);
 }
 h2 {
   font-size: var(--fs-xl);
-  margin-bottom: var(--space-md);
+  color: var(--color-text-secondary-accent);
 }
 h3 {
   font-size: var(--fs-lg);
@@ -72,7 +74,6 @@ h4 {
 
 /* Les paragraphes */
 p {
-  margin-bottom: var(--space-md);
   color: var(--color-text-neutral);
 }
 .code {
@@ -131,4 +132,3 @@ input[type='submit']:active,
   box-shadow: var(--color-shadow-strong);
   transform: scale(0.95);
 }
-

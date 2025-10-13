@@ -1,70 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <!-- §---------------------------------------
-    §                [HEAD]
-    §      Titre, Meta Datas et Styles
+  <!-- §-----------------------------------------
+    §                [HEAD]                      
+    §      Titre, Meta Datas et Styles           
     §------------------------------------------->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#0d0d0d">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d0d0d" />
 
-        <!-- *-----------------------------------
-        *        PAGE META TAGS
-        *--------------------------------------->
-        
-        <!-- *--- Balise titre ----------------->
-        <title>TaskFlow — Organise tes idées, fluidifie tes journées</title>
+    <!-- *---------------------------------------
+    *            PAGE META TAGS
+    *------------------------------------------->
 
-        <!-- *- Meta description --------------->
-        <meta name="description" content="TaskFlow est une to-do list élégante et intuitive, inspirée des carnets de notes. Planifie, coche, recommence — tout en gardant le plaisir d’un flow clair et fluide.">
+    <!-- *------- Balise titre ----------------->
+    <title>TaskFlow — Organise tes idées, fluidifie tes journées</title>
 
-        <!-- *------ Auteur -------------------->
-        <meta name="author" content="Jhauck67">
+    <!-- *----- Meta description --------------->
+    <meta
+      name="description"
+      content="TaskFlow est une to-do list élégante et intuitive, inspirée des carnets de notes. Planifie, coche, recommence — tout en gardant le plaisir d’un flow clair et fluide."
+    />
 
-        <!-- *-----------------------------------
-        *          OPENGRAPH META TAGS
-        *--------------------------------------->
-        <meta property="og:url" content="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/index.html">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="TaskFlow — Organise tes idées, fluidifie tes journées">
-        <meta property="og:description" content="TaskFlow est une to-do list élégante et intuitive, inspirée des carnets de notes. Planifie, coche, recommence — tout en gardant le plaisir d’un flow clair et fluide.">
-        <meta property="og:image" content="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/assets/img/sketch/opengraph.png">
+    <!-- *---------- Auteur -------------------->
+    <meta name="author" content="Jhauck67" />
 
-        
-        <!-- *-----------------------------------
-        *        FAVICONS SYSTEM
-        *--------------------------------------->
-        <link rel="shortcut icon" href="assets/img/icons/favicons/favicon.ico">
-<link rel="icon" type="image/svg+xml" href="assets/img/icons/favicons/favicon.svg">
-<link rel="icon" sizes="32x32" href="assets/img/icons/favicons/favicon32x32.png">
-<link rel="icon" sizes="16x16" href="assets/img/icons/favicons/favicon16x16.png">
-<link rel="apple-touch-icon" href="assets/img/icons/favicons/apple-touch-icon.png">
+    <!-- *---------------------------------------
+    *          OPENGRAPH META TAGS
+    *------------------------------------------->
+    <meta
+      property="og:url"
+      content="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TaskFlow — Organise tes idées, fluidifie tes journées" />
+    <meta
+      property="og:description"
+      content="TaskFlow est une to-do list élégante et intuitive, inspirée des carnets de notes. Planifie, coche, recommence — tout en gardant le plaisir d’un flow clair et fluide."
+    />
+    <meta
+      property="og:image"
+      content="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/assets/img/sketch/opengraph.png"
+    />
 
+    <!-- *---------------------------------------
+    *            FAVICONS SYSTEM
+    *------------------------------------------->
+    <link rel="shortcut icon" href="assets/img/icons/favicons/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/icons/favicons/favicon.svg" />
+    <link rel="icon" sizes="32x32" href="assets/img/icons/favicons/favicon32x32.png" />
+    <link rel="icon" sizes="16x16" href="assets/img/icons/favicons/favicon16x16.png" />
+    <link rel="apple-touch-icon" href="assets/img/icons/favicons/apple-touch-icon.png" />
 
-        <!-- *-----------------------------------
-        *       FEUILLES DE STYLE
-        *--------------------------------------->
-        <link rel="stylesheet" href="./assets/styles/settings/reset.css">
-        <link rel="stylesheet" href="./assets/styles/settings/variables.css">
-        <link rel="stylesheet" href="./assets/styles/settings/global.css">
-        <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- *---------------------------------------
+    *           FEUILLES DE STYLE
+    *------------------------------------------->
+    <link rel="stylesheet" href="./assets/styles/settings/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/settings/variables.css" />
+    <link rel="stylesheet" href="./assets/styles/settings/global.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
 
-        <!-- *-----------------------------------
-        *      PRELOAD DES IMAGES
-        *--------------------------------------->
-    </head>
-    <!-- §---------------------------------------
-    §                [BODY]
-    §             Début du site
+  <!-- §-----------------------------------------
+    §                [BODY]                      
+    §             Début du site                  
     §------------------------------------------->
-    <body>
-        <h1>Le site arrive bientôt</h1>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-logo">
+          <img
+            src="./assets/img/icons/svgs/logo.svg"
+            alt="Logo de TaskFlow"
+            width="50"
+            height="50"
+          />
+        </div>
+        <div class="header-title">
+          <h1>
+            <span class="first-letter">T</span>
+            ask
+            <span class="first-letter">F</span>
+            low
+          </h1>
+          <h2>L’art de cocher avec style.</h2>
+        </div>
+        <div class="header-theme"></div>
+      </header>
+      <main>
+        <div class="input-container">
+          <input
+            type="text"
+            name="taskInput"
+            id="taskInput"
+            aria-label="taskInput"
+            placeholder="Texte de la tâche"
+          />
+          <div class="addBtn button" id="addBtn">
+            <img
+              src="./assets/img/icons/svgs/add.svg"
+              alt=""
+              width="16"
+              height="16"
+              aria-label="Ajouter une tâche"
+            />
+          </div>
+          <div class="modifBtn button" id="modifBtn">
+            <img
+              src="./assets/img/icons/svgs/modified.svg"
+              alt=""
+              width="16"
+              height="16"
+              aria-label="Modifier une tâche"
+            />
+          </div>
+          <div class="removeBtn button" id="removeBtn">
+            <img
+              src="./assets/img/icons/svgs/remove.svg"
+              alt=""
+              width="16"
+              height="16"
+              aria-label="Supprimer une tâche"
+            />
+          </div>
+        </div>
+        <div class="list-container">
+          <ul></ul>
+        </div>
+      </main>
+    </div>
 
-        <!-- *-----------------------------------
+    <!-- *-----------------------------------
         *           SCRIPT JS
         *--------------------------------------->
-        <script type="module" src="./assets/scripts/index.js"></script>
-    </body>
+    <script type="module" src="./assets/scripts/index.js"></script>
+  </body>
 </html>
-    

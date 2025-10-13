@@ -1,135 +1,144 @@
-/* TITRE : [VARIABLES] : Variables fonts, couleurs, espacements, etc... */
 
-/* ###### TYPOGRAPHIE ###### */
-/* (1) Import des fonts */
+/*§============================================*/
+/*§          DESIGN TOKENS VARIABLES           */
+/*§============================================*/
+
+/** --------------- LES FONTS -----------------*/
+/* Import des fonts : @font-face */
+
+
 @font-face {
-  font-family: 'Orbitron';
-  src: url(../../fonts/Orbitron-VariableFont_wght.ttf);
-  font-display: swap;
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url(../../fonts/IBMPlexSans-VariableFont_wdth-wght.ttf);
-  font-display: swap;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url(../../fonts/JetBrainsMono-VariableFont_wght.ttf);
-  font-display: swap;
+    font-family: 'CaveatBrush';
+    src: url('../../fonts/CaveatBrush-Regular.ttf');
 }
 
-/* ########## COLORS ########## */
+@font-face {
+    font-family: 'Caveat';
+    src: url('../../fonts/Caveat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Comforter';
+    src: url('../../fonts/Comforter-Regular.ttf');
+}
+
+
+/* Définition des variables : --font-* */
 :root {
-  /* (1) Couleur de base : */
-  --hue: 111;
-  --sat: 100%;
-  --light: 54%;
-
-  /* (2) Palette des couleurs : */
-  /* ¤ Primary Color */
-  --primary-color-light: hsl(
-    var(--hue),
-    calc((2 / 3) * var(--sat)),
-    calc((2 / 3) * var(--light) + 33%)
-  );
-  --primary-color: hsl(var(--hue), var(--sat), var(--light));
-  --primary-color-dark: hsl(var(--hue), calc(50% + var(--sat) / 2), calc(var(--light) / 2));
-
-  /* ¤ Neutral */
-  --neutral0: hsl(0, 0%, 98%);
-  --neutral1: hsl(0, 0%, 79%);
-  --neutral2: hsl(0, 0%, 60%);
-  --neutral3: hsl(0, 0%, 41%);
-  --neutral4: hsl(0, 0%, 22%);
-  --neutral5: hsl(0, 0%, 3%);
-
-  /* ¤ Variation en transparence */
-  --transparent10: hsla(var(--hue), var(--sat), var(--light), 0.1); /* séparateur, ombre fine */
-  --transparent30: hsla(
-    var(--hue),
-    var(--sat),
-    var(--light),
-    0.3
-  ); /* fond de carte, bordure+visible */
-  --transparent60: hsla(
-    var(--hue),
-    var(--sat),
-    var(--light),
-    0.6
-  ); /* overlays, fond semi-transparent derrière texte, survol */
-  --transparent90: hsla(
-    var(--hue),
-    var(--sat),
-    var(--light),
-    0.9
-  ); /* effet de survol bouton/lien, actif */
-
-  /* ¤ Effets d'ombre */
-  --shadow-color: 0 10px 20px 0 hsla(var(--hue), var(--sat), var(--light), 0.15),
-    0 5px 10px 0 hsla(var(--hue), var(--sat), var(--light), 0.1),
-    0 2px 4px 1px hsla(var(--hue), var(--sat), var(--light), 0.05);
-  --shadow-black: 0 10px 20px 0 hsla(0, 0%, 22%, 0.15), 0 5px 10px 0 hsla(0, 0%, 22%, 0.1),
-    0 2px 4px 1px hsla(0, 0%, 22%, 0.05);
-  --shadow-white: 0 10px 20px 0 hsla(0, 0%, 79%, 0.15), 0 5px 10px 0 hsla(0, 0%, 79%, 0.1),
-    0 2px 4px 1px hsla(0, 0%, 79%, 0.05);
+  --font-logo: 'Comforter', sans-serif;
+  --font-title: 'CaveatBrush', sans-serif;
+  --font-text: 'Caveat', sans-serif;
+  --font-code: 'CaveatBrush', monospace;
 }
 
-/* ###### AUTRES VARIABLES ###### */
+
+/** ------------ COLORS PALETTE ---------------*/
 :root {
-  /* (1) Définition des espacements */
-  --spacing-xs: 0.25rem;
-  --spacing-s: 0.5rem;
-  --spacing-m: 1rem;
-  --spacing-l: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-xxl: 5rem;
+    /* Backgrounds : --color-bg-* */
+    --color-bg-neutral: hsl(120, 5%, 95%);
+    --color-bg-lighter: hsl(120, 10%, 100%);
+    --color-bg-darker: hsl(120, 0%, 90%);
+    --color-bg-accent: hsl(120, 100%, 50%);
+    --color-bg-inverted: hsl(120, 5%, 5%);
 
-  /* (2) Tailles de police */
-  --font-size-xs: 0.75rem;
-  --font-size-s: 0.875rem;
-  --font-size-m: 1rem;
-  --font-size-l: 1.25rem;
-  --font-size-xl: 2rem;
-  --font-size-xxl: 3rem;
+    /* Texts : --color-text-* */
+    --color-text-neutral: hsl(120, 5%, 5%);
+    --color-text-lighter: hsl(120, 10%, 10%);
+    --color-text-darker: hsl(120, 0%, 0%);
+    --color-text-onAccent: hsl(120, 5%, 5%);
+    --color-text-primary-accent: hsl(120, 100%, 50%);
+    --color-text-secondary-accent: hsl(120, 44%, 24%);
+    --color-text-inverted: hsl(120, 5%, 95%);
+    --color-text-secondary-accent-inverted: hsl(120, 44%, 51%);
 
-  /* (3) Rayons de bordure */
-  --radius-s: 4px;
-  --radius-m: 8px;
-  --radius-l: 12px;
+    /* Hovers : --color-hover-* */
+    --color-hover-primary-accent: hsl(120, 100%, 60%);
+    --color-hover-secondary-accent: hsl(120, 54%, 34%);
+    --color-hover-secondary-accent-inverted: hsl(120, 54%, 61%);
 
-  /* (4) Durées de transition */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
+    /* Actives : --color-active-* */
+    --color-active-primary-accent: hsl(120, 90%, 40%);
+    --color-active-secondary-accent: hsl(120, 34%, 14%);
+    --color-active-secondary-accent-inverted: hsl(120, 34%, 41%);
+
+    /* Borders & Separators : --color-separator-* & --color-border-* */
+    --color-separator: hsl(120, 44%, 24%, 0.1);
+    --color-separator-inverted: hsl(120, 44%, 51%, 0.1);
+    --color-border: hsl(120, 44%, 24%, 0.3);
+    --color-border-inverted: hsl(120, 44%, 51%, 0.3);
+
+    /* Shadows : --color-shadow-* */
+    --color-shadow-light: 0 1px 2px hsl(120, 5%, 5%, 0.1);
+    --color-shadow-medium: 0 2px 6px hsl(120, 5%, 5%, 0.2);
+    --color-shadow-strong: 0 4px 12px hsl(120, 5%, 5%, 0.3);
+    --color-shadow-light-inverted: 0 1px 2px hsl(120, 5%, 95%, 0.1);
+    --color-shadow-medium-inverted: 0 2px 6px hsl(120, 5%, 95%, 0.2);
+    --color-shadow-strong-inverted: 0 4px 12px hsl(120, 5%, 95%, 0.3);
+
+    /* States : --color-focus & --color-disabled-* */
+    --color-focus: hsl(120, 100%, 70%);
+    --color-disabled-primary: hsl(120, 100%, 50%, 0.4);
+    --color-disabled-secondary: hsl(120, 44%, 24%, 0.4);
+    --color-disabled-secondary-inverted: hsl(120, 44%, 51%, 0.4);
+}
+
+
+/** ---------- FONT SIZES, WEIGHTS ------------*/
+:root {
+  /* Font-sizes : --fs-* */
+  --fs-xxs: 0.625rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 3rem;
+
+  /* Font-weights : --fw-* */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/** --------------- SPACINGS ------------------*/
+:root {
+  /* Spacings : --space-* */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+}
+
+/** -------- BORDER RADIUS & STROKES ----------*/
+:root {
+  /* Border radius : --radius-* */
+  --radius-none: 0;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-pill: 9999px;
+
+  /* Border Width : --border-* */
+  --border-thin: 1px;
+  --border-base: 2px;
+  --border-thick: 4px;
+}
+
+/** -------------- TRANSITIONS ----------------*/
+:root {
+  /* Transitions : --transition-* */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
-
-  /* (5) Définition des breakpoints */
-  --mobile: 480px;
-  --tablet: 770px;
-  --desktop: 1024px;
 }
 
-/* ###### VARIABLES SEMANTIQUES ###### */
-:root {
-  /* (1) Couleur de background : */
-  --background-color-primary: var(--neutral5);
-  --background-color-secondary: var(--neutral4);
-
-  /* (2) Typographie : */
-  --font-title: 'Orbitron', sans-serif;
-  --font-text: 'IBM Plex Sans', sans-serif;
-  --font-code: 'JetBrains Mono', monospace;
-
-  /* (3) Couleur de texte */
-  --color-text-primary: var(--neutral0);
-  --color-text-secondary: var(--neutral2);
-
-  /* (4) Couleur d'interactivité */
-  /* ¤ Accentuation : */
-  --color-accent-primary: var(--primary-color);
-
-  /* ¤ Hover : */
-  --color-hover: var(--transparent90); /* effet au survol */
-
-  /* ¤ Border : */
-  --color-border: var(--transparent30);
-}

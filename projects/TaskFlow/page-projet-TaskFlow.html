@@ -9,45 +9,48 @@
 
     <!-- ====== 🔖 [META TAGS PAGE] ====== -->
     <!-- Titre -->
-    <title>ForgeKit — Mini Framework Front-End | Sandbox-Station</title>
+    <title>TaskFlow — Gestion intuitive des tâches | Sandbox-Station</title>
     <!-- Meta Description -->
     <meta
       name="description"
-      content="ForgeKit est un mini framework front-end léger en HTML, SASS et JavaScript, conçu pour accélérer la création de prototypes web clairs, modulaires et bien structurés."
+      content="TaskFlow est une mini-application web de gestion des tâches, intuitive et responsive, conçue pour explorer le DOM et la logique JavaScript en conditions réelles."
     />
     <!-- favicon.ico -->
-    <link rel="icon" type="image/x-icon" href="../../../assets/img/icons/favicons/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/icons/favicons/favicon.ico" />
     <!-- favicon.svg -->
-    <link rel="icon" type="image/svg+xml" href="../../../assets/img/icons/favicons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/img/icons/favicons/favicon.svg" />
     <!-- favicon.png -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../../assets/img/icons/favicons/favicon32x32.png"
+      href="../../assets/img/icons/favicons/favicon32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../../assets/img/icons/favicons/favicon16x16.png"
+      href="../../assets/img/icons/favicons/favicon16x16.png"
     />
     <!-- Apple-touch-icon.png -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../../assets/img/icons/favicons/apple-touch-icon.png"
+      href="../../assets/img/icons/favicons/apple-touch-icon.png"
     />
     <!-- Auteur -->
     <meta name="author" content="Jhauck67" />
 
     <!-- ====== 🔖 [OPENGRAPH META TAGS] ====== -->
-    <meta property="og:url" content="https://jhauck67.github.io/ForgeKit/index.html" />
+    <meta
+      property="og:url"
+      content="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/index.html"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ForgeKit — Mini Framework Front-End | Sandbox-Station" />
+    <meta property="og:title" content="TaskFlow — Gestion intuitive des tâches | Sandbox-Station" />
     <meta
       property="og:description"
-      content="ForgeKit est un mini framework front-end léger en HTML, SASS et JavaScript, conçu pour accélérer la création de prototypes web clairs, modulaires et bien structurés."
+      content="TaskFlow est une mini-application web de gestion des tâches, intuitive et responsive, développée pour pratiquer le DOM et la logique JavaScript."
     />
     <meta
       property="og:image"
@@ -56,10 +59,10 @@
 
     <!-- ====== 🎨 [FEUILLE DE STYLE CSS] ====== -->
     <!-- Lien vers la feuille de style css -->
-    <link rel="stylesheet" href="../../../assets/styles/settings/reset.css" />
-    <link rel="stylesheet" href="../../../assets/styles/settings/variables.css" />
-    <link rel="stylesheet" href="../../../assets/styles/settings/global.css" />
-    <link rel="stylesheet" href="../../../assets/styles/page-projet.css" />
+    <link rel="stylesheet" href="../../assets/styles/settings/reset.css" />
+    <link rel="stylesheet" href="../../assets/styles/settings/variables.css" />
+    <link rel="stylesheet" href="../../assets/styles/settings/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/page-projet.css" />
   </head>
 
   <!-- ===== 📄 [BODY] : Début du site ====== -->
@@ -69,7 +72,7 @@
       <!-- 🧭 NAV : Retour au portfolio -->
       <nav>
         <a
-          href="../../../index.html"
+          href="../../index.html"
           class="back-link"
           aria-label="Retour vers la page d'accueil du portfolio"
         >
@@ -78,9 +81,9 @@
       </nav>
       <!-- 🔖 Titre et Sous-titre du projet -->
       <div class="project-title">
-        <h1>ForgeKit</h1>
+        <h1>TaskFlow</h1>
         <p class="project-tagline">
-          Un mini framework front-end modulable, rapide à forger et à déployer.
+          Une application simple et fluide pour organiser ses tâches du quotidien
         </p>
       </div>
     </header>
@@ -241,8 +244,8 @@
         <div class="project-preview">
           <figure class="preview-container">
             <img
-              src="./apercu-page-forgekit.webp"
-              alt="aperçu du projet ForgeKit"
+              src="./apercu-page-TaskFlow.webp"
+              alt="aperçu du projet Nom du Projet"
               width="600"
               height="400"
             />
@@ -257,36 +260,45 @@
         <!-- Description du projet -->
         <div class="project-description">
           <p>
-            ForgeKit est un
-            <strong>mini framework front-end</strong>
-            que j’ai conçu pour
-            <strong>accélérer la création de prototypes web</strong>
-            sans dépendre de gros frameworks. Il fournit une base claire et modulaire avec une
-            structure en
-            <strong>HTML sémantique</strong>
-            , un
-            <strong>style SASS organisé</strong>
-            et des
-            <strong>composants JavaScript légers</strong>
-            .
+            <strong>TaskFlow</strong>
+            est une mini-application web conçue pour apprendre à manipuler le
+            <em>DOM (Document Object Model)</em>
+            avec JavaScript. Le but était de créer une interface simple permettant d’ajouter, de
+            marquer et de supprimer des tâches, tout en assurant une expérience fluide et
+            responsive.
           </p>
           <p>
-            L’idée est née en constatant combien il est facile de se perdre dans la configuration de
-            projets simples. J’ai donc voulu créer ma propre “boîte à outils” — une forge — pour
-            démarrer rapidement un projet sans sacrifier la propreté du code ni la cohérence
-            visuelle.
+            Ce projet m’a permis de renforcer ma compréhension des événements JavaScript, de la
+            <em>gestion d’état local</em>
+            (avec
+            <code>localStorage</code>
+            ), et d’expérimenter un design sobre et accessible, compatible sur mobile et desktop.
           </p>
         </div>
         <!-- Fonctionnalités principales -->
         <div class="features">
           <h3>Fonctionnalités clés</h3>
           <ul>
-            <li><span>✔️ Une structure de fichiers claire et réutilisable</span></li>
-            <li><span>✔️ Un système CSS modulaire pour styliser rapidement</span></li>
+            <li>
+              <span>✔️ Ajout instantané de tâches via un champ de saisie et un bouton “➕”.</span>
+            </li>
             <li>
               <span>
-                ✔️ Des snippets JavaScript prêts à l’emploi (navigation, modales, thèmes…)
-                <i>à venir</i>
+                ✔️ Marquage des tâches comme complétées grâce à une case à cocher dynamique.
+              </span>
+            </li>
+            <li>
+              <span>
+                ✔️ Modification rapide du texte d’une tâche existante directement depuis
+                l’interface.
+              </span>
+            </li>
+            <li><span>✔️ Suppression immédiate d’une tâche terminée ou obsolète.</span></li>
+            <li>
+              <span>
+                ✔️ Sauvegarde automatique de la liste dans le
+                <code>localStorage</code>
+                pour la retrouver après rechargement.
               </span>
             </li>
           </ul>
@@ -301,68 +313,118 @@
           <div>
             <h3>Architecture</h3>
             <p>
-              ForgeKit repose sur une architecture claire et modulaire, pensée pour servir de base à
-              tous mes projets front-end. Chaque section du générateur correspond à un ensemble
-              cohérent de fichiers :
-              <strong>meta</strong>
-              ,
-              <strong>readme</strong>
-              ,
-              <strong>fonts</strong>
-              ,
-              <strong>colors</strong>
-              ,
-              <strong>favicons</strong>
-              et
-              <strong>svgs</strong>
-              .
+              TaskFlow repose sur une architecture front-end simple et modulaire, pensée pour la
+              clarté et la maintenabilité du code.
             </p>
-            <div>
-              Côté structure, j’ai séparé les responsabilités :
-              <ul>
-                <li>
-                  <strong>HTML :</strong>
-                  structure sémantique et composants de base
-                </li>
-                <li>
-                  <strong>CSS :</strong>
-                  variables globales, SASS modulaire, reset et style par section
-                </li>
-                <li>
-                  <strong>JavaScript :</strong>
-                  logique découpée en modules indépendants (un fichier par fonctionnalité)
-                </li>
-              </ul>
-            </div>
+
+            <ul>
+              <li>
+                <strong>Structure HTML :</strong>
+                chaque tâche est représentée par un élément
+                <code>&lt;li&gt;</code>
+                contenant une case à cocher, le texte de la tâche et des boutons d’action.
+              </li>
+              <li>
+                <strong>Style CSS/SASS :</strong>
+                la mise en page utilise Flexbox et des classes réutilisables pour assurer un
+                affichage responsive et cohérent sur tous les supports.
+              </li>
+              <li>
+                <strong>Logique JavaScript :</strong>
+                le script gère les interactions utilisateur (ajout, suppression, modification,
+                validation) et la synchronisation avec le
+                <code>localStorage</code>
+                pour la persistance des données.
+              </li>
+              <li>
+                <strong>Organisation du code :</strong>
+                les fonctions sont séparées par rôle :
+                <em>addTask()</em>
+                ,
+                <em>modifyTask()</em>
+                ,
+                <em>removeTask()</em>
+                et
+                <em>toggleTask()</em>
+                , afin de favoriser la lisibilité et les évolutions futures.
+              </li>
+              <li>
+                <strong>Événements délégués :</strong>
+                un écouteur unique sur la liste (
+                <code>ul</code>
+                ) détecte les clics sur les boutons via
+                <code>e.target.closest()</code>
+                , limitant la duplication de code.
+              </li>
+            </ul>
+
             <p>
-              Le site est entièrement
-              <strong>statique</strong>
-              et hébergé sur GitHub Pages. Les modules JavaScript communiquent entre eux via des
-              sélecteurs bien définis pour éviter les dépendances implicites. Cette approche rend
-              ForgeKit facilement extensible et maintenable.
+              Cette architecture légère permet d’ajouter facilement de nouvelles fonctionnalités
+              (filtres, tri, catégories) sans refactoriser en profondeur la base existante.
             </p>
           </div>
           <!-- Défis techniques -->
           <div>
             <h3>Défis techniques</h3>
             <p>
-              Le principal défi a été de
-              <strong>gérer la communication entre les modules JavaScript</strong>
-              sans créer de dépendances circulaires. Chaque module devait être autonome tout en
-              partageant certaines valeurs (comme la palette ou les descriptions d’options).
+              Le développement de
+              <strong>TaskFlow</strong>
+              a été l’occasion d’approfondir plusieurs notions essentielles en JavaScript moderne,
+              notamment la manipulation du DOM et la gestion des événements.
             </p>
+
+            <ul>
+              <li>
+                <strong>1. Gestion des événements dynamiques :</strong>
+                Les tâches étant ajoutées dynamiquement, les écouteurs directs sur les éléments ne
+                fonctionnaient pas. J’ai donc opté pour la
+                <em>délégation d’événements</em>
+                via
+                <code>body.addEventListener()</code>
+                et
+                <code>e.target.closest()</code>
+                , ce qui a rendu le script plus robuste et évolutif.
+              </li>
+
+              <li>
+                <strong>2. Modification d’une tâche existante :</strong>
+                Un bug est apparu lors de la modification multiple d’une même tâche : au deuxième
+                essai, la structure de la liste était altérée. Le problème venait d’un
+                <em>écouteur ajouté à chaque clic</em>
+                sur le bouton ✏️. J’ai compris qu’il fallait séparer la logique de modification de
+                la logique d’écoute, afin d’éviter les empilements d’événements.
+              </li>
+
+              <li>
+                <strong>3. Sélection des bons éléments du DOM :</strong>
+                La méthode
+                <code>.closest()</code>
+                m’a beaucoup aidée à cibler les bons éléments parents, mais j’ai aussi découvert les
+                limites de cette approche (pas de recherche de “frères” directs). J’ai donc appris à
+                naviguer dans le DOM avec
+                <code>.previousElementSibling</code>
+                et
+                <code>.nextElementSibling</code>
+                selon les besoins.
+              </li>
+
+              <li>
+                <strong>4. Préparation de la persistance des données :</strong>
+                Avant d’implémenter le
+                <code>localStorage</code>
+                , j’ai réfléchi à la meilleure façon de transformer la
+                <code>NodeList</code>
+                en
+                <code>Array</code>
+                pour pouvoir la sérialiser. Cette étape m’a permis de mieux comprendre la structure
+                des données manipulées dans le DOM.
+              </li>
+            </ul>
+
             <p>
-              J’ai donc mis en place un système d’
-              <strong>initialisation progressive</strong>
-              : chaque fichier JS s’exécute uniquement si les éléments cibles sont présents dans le
-              DOM. Cela permet d’éviter les erreurs et de garder le code compatible avec des pages
-              partielles.
-            </p>
-            <p>
-              Côté CSS, le challenge a été de
-              <strong>trouver un équilibre entre clarté et flexibilité</strong>
-              . J’ai choisi de conserver une structure purement CSS plutôt que SASS compilé pour
-              simplifier la maintenance et garantir que ForgeKit reste léger et portable.
+              Ces défis m’ont permis de renforcer mes bases en manipulation du DOM et d’adopter de
+              meilleures pratiques de structuration du code JavaScript, tout en développant une
+              vraie logique de débogage.
             </p>
           </div>
         </div>
@@ -374,7 +436,7 @@
         <!-- Lien Github et autres ressources -->
         <div class="resource-links">
           <a
-            href="https://github.com/jhauck67/ForgeKit"
+            href="https://github.com/jhauck67/Sandbox-Station/tree/TaskFlow"
             class="resource-link-github"
             target="_blank"
           >
@@ -387,7 +449,7 @@
             <span>Code source sur Github</span>
           </a>
           <a
-            href="https://jhauck67.github.io/ForgeKit/index.html"
+            href="https://jhauck67.github.io/Sandbox-Station/projects/TaskFlow/demo/index.html"
             class="resource-link-demo"
             target="_blank"
           >

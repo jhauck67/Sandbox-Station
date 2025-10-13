@@ -69,6 +69,14 @@
             "projectTags": ["HTML", "SASS", "JS"],
             "projectLink": "./projects/JSON-Stringify/page-projet-json-stringify.html",
             "projectImage": "page-accueil-json-stringify.webp"
+        },
+        {
+            "id": "taskflow",
+            "projectName": "TaskFlow",
+            "projectDescription": "Une mini application de gestion de tâches permettant d’ajouter, modifier, cocher et supprimer des éléments, avec sauvegarde automatique dans le localStorage.",
+            "projectTags": ["HTML", "SASS", "JS"],
+            "projectLink": "./projects/TaskFlow/page-projet-TaskFlow.html",
+            "projectImage": "apercu-page-TaskFlow.webp"
         }
     ]
 }

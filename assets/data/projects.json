@@ -77,6 +77,14 @@
             "projectTags": ["HTML", "SASS", "JS"],
             "projectLink": "./projects/TaskFlow/page-projet-TaskFlow.html",
             "projectImage": "page-accueil-taskflow.webp"
+        },
+        {
+            "id": "KVBSettings",
+            "projectName": "KVBSettings",
+            "projectDescription": "Assistant de calcul des paramètres KVB (Contrôle de Vitesse par Balises) pour la conduite ferroviaire.",
+            "projectTags": ["HTML", "CSS", "JS"],
+            "projectLink": "./projects/KVBSettings/demo/index.html",
+            "projectImage": "page-accueil-taskflow.webp"
         }
     ]
 }

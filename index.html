@@ -1,249 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- TITRE : [HEAD] : Titre, Meta Datas et Styles -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0d0d0d" />
+    <!-- §---------------------------------------
+    §                [HEAD]
+    §      Titre, Meta Datas et Styles
+    §------------------------------------------->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#0d0d0d">
 
-    <!-- ###### [META TAGS PAGE] ###### -->
-    <!-- (1) Balise title -->
-    <title>Sandbox-Station – Intégrations & petits projets front-end</title>
+        <!-- *-----------------------------------
+        *        PAGE META TAGS
+        *--------------------------------------->
+        
+        <!-- *--- Balise titre ----------------->
+        <title>KVB Settings</title>
 
-    <!-- (2) Meta Description -->
-    <meta
-      name="description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
-    />
+        <!-- *- Meta description --------------->
+        <meta name="description" content="Assistant de calcul des paramètres KVB (Contrôle de Vitesse par Balises) pour la conduite ferroviaire.">
 
-    <!-- (3) Icons system -->
-    <!-- ¤ favicon.ico -->
-    <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicons/favicon.ico" />
-    <!-- ¤ favicon.svg -->
-    <link rel="icon" type="image/svg+xml" href="./assets/img/icons/favicons/favicon.svg" />
-    <!-- ¤ favicon.png -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/img/icons/favicons/favicon32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/img/icons/favicons/favicon16x16.png"
-    />
-    <!-- ¤ Apple-touch-icon.png -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/img/icons/favicons/apple-touch-icon.png"
-    />
+        <!-- *------ Auteur -------------------->
+        <meta name="author" content="Jhauck67">
 
-    <!-- (4) Auteur -->
-    <meta name="author" content="Jhauck67" />
+        <!-- *-----------------------------------
+        *          OPENGRAPH META TAGS
+        *--------------------------------------->
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="KVB Settings">
+        <meta property="og:description" content="Assistant de calcul des paramètres KVB (Contrôle de Vitesse par Balises) pour la conduite ferroviaire.">
+        <meta property="og:image" content="assets/img/sketch/opengraph.png">
 
-    <!-- ###### [OPENGRAPH META TAGS] ###### -->
-    <meta property="og:url" content="https://jhauck67.github.io/Sandbox-Station/index.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sandbox-Station – Intégrations & petits projets front-end" />
-    <meta
-      property="og:description"
-      content="Une escale dans mes projets web : intégrations créatives, animations CSS, maquettes responsives et autres expérimentations techniques."
-    />
-    <meta
-      property="og:image"
-      content="https://jhauck67.github.io/Sandbox-Station/assets/sketch/opengraph.png"
-    />
+        
+        <!-- *-----------------------------------
+        *        FAVICONS SYSTEM
+        *--------------------------------------->
+        <link rel="shortcut icon" href="assets/img/icons/favicons/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/img/icons/favicons/favicon.svg">
+<link rel="icon" sizes="32x32" href="assets/img/icons/favicons/favicon32x32.png">
+<link rel="icon" sizes="16x16" href="assets/img/icons/favicons/favicon16x16.png">
+<link rel="apple-touch-icon" href="assets/img/icons/favicons/apple-touch-icon.png">
 
-    <!-- ###### [FEUILLE DE STYLE CSS] ###### -->
-    <!-- Lien vers la feuille de style css -->
-    <link rel="stylesheet" href="./assets/styles/settings/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/settings/global.css" />
-    <link rel="stylesheet" href="./assets/styles/settings/variables.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/styles/projects.css" />
 
-    <!-- ###### [PRELOAD DES IMAGES] ###### -->
-    <!-- permet de précharger les images importantes -->
-    <link
-      rel="preload"
-      href="./assets/img/header-illustration-langages.webp"
-      as="image"
-      type="image/webp"
-    />
-  </head>
+        <!-- *-----------------------------------
+        *       FEUILLES DE STYLE
+        *--------------------------------------->
+        <link rel="stylesheet" href="./assets/styles/settings/reset.css">
+        <link rel="stylesheet" href="./assets/styles/settings/variables.css">
+        <link rel="stylesheet" href="./assets/styles/settings/global.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
 
-  <!-- TITRE : [BODY] : Début du site -->
-  <body>
-    <!-- ###### [BARRE DE NAVIGATION] ###### -->
-    <nav id="nav">
-      <div class="nav-container">
-        <!-- (1) .logo-container -->
-        <div class="logo-container">
-          <div class="logo">
-            <span class="logo-bracket">[</span>
-            <span class="logo-text">Sandbox-Station</span>
-            <span class="logo-bracket">]</span>
-          </div>
-          <p class="tagline">Laboratoire d'expérimentations web</p>
-        </div>
+        <!-- *-----------------------------------
+        *      PRELOAD DES IMAGES
+        *--------------------------------------->
+    </head>
+    <!-- §---------------------------------------
+    §                [BODY]
+    §             Début du site
+    §------------------------------------------->
+    <body>
+        <h1>Le site arrive bientôt</h1>
 
-        <!-- (2) .navbar -->
-        <div class="navbar">
-          <ul>
-            <li>
-              <a href="#integrations" class="nav-link">Integrations</a>
-            </li>
-            <li>
-              <a href="#interactions" class="nav-link">Interactions</a>
-            </li>
-            <li>
-              <a href="#experiments" class="nav-link">Experiments</a>
-            </li>
-            <li>
-              <a href="#apps" class="nav-link">Apps</a>
-            </li>
-          </ul>
-
-          <!-- (3) .icon-burger -->
-          <div class="icon-burger" id="icon-burger" aria-label="Menu de navigation">
-            <span class="burger-bar"></span>
-            <span class="burger-bar"></span>
-            <span class="burger-bar"></span>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- ########## [HEADER] ########## -->
-    <header>
-      <div class="header-container">
-        <h1 class="glitch-text" data-text="Sandbox-Station">Sandbox-Station</h1>
-        <p class="header-text">
-          Ici se trouvent tous mes projets en cours ou finalisés, développés à la main en
-          HTML/CSS/JS. Un labo d’idées, un terrain d’expériences, un endroit où je casse, teste,
-          améliore — et documente mes apprentissages.
-        </p>
-        <div class="header-cta">
-          <a href="#projects" class="cta-button">Explorer les projets &darr;</a>
-        </div>
-        <!-- Illustration décorative -->
-        <img
-          class="illustration"
-          src="./assets/img/header-illustration-langages.webp"
-          alt="Illustration en style futuriste montrant un ordinateur central connecté à plusieurs technologies web : HTML5, CSS3, JavaScript, React, Figma, GitHub, Node.js et Visual Studio Code."
-          width="640"
-          height="448"
-        />
-      </div>
-      <span class="light"></span>
-      <span class="light"></span>
-    </header>
-
-    <!-- ###### [MAIN] : Les projets ###### -->
-    <main>
-      <div class="projects-container" id="projects">
-        <!-- (1) Section : Intégrations-->
-        <section id="integrations">
-          <div class="integrations-header">
-            <h2>Projets d'intégration HTML/CSS statiques</h2>
-            <p>
-              Des pages web reproduites au pixel près, codées à la main pour m’entraîner à
-              l’intégration fidèle de maquettes.
-              <br />
-              Chaque projet est une maquette transformée en page web responsive, avec une attention
-              particulière portée à la sémantique et aux détails visuels.
-            </p>
-          </div>
-          <div class="integrations-body">
-            <div class="cards-container"></div>
-          </div>
-        </section>
-        <!-- (2) Section : Interactions-->
-        <section id="interactions">
-          <div class="interactions-header">
-            <h2>Projets avec JavaScript Vanilla</h2>
-            <p>
-              Ces projets me permettent de manipuler le JavaScript côté interface, en douceur mais
-              avec ambition.
-              <br />
-              Ajout de comportements dynamiques simples : sliders, menus déroulants, filtres
-              interactifs… sans librairies externes.
-            </p>
-          </div>
-          <div class="interactions-body">
-            <div class="cards-container"></div>
-          </div>
-        </section>
-        <!-- (3) Section : Expérimentations-->
-        <section id="experiments">
-          <div class="experiments-header">
-            <h2>Tests techniques et expérimentations</h2>
-            <p>
-              Ici je casse, je tente, je joue. Ces projets sont des prototypes, des bouts de code,
-              des idées en chantier.
-              <br />
-              Rien n’est figé : ces expériences évoluent au fil de mes découvertes, et parfois
-              donnent naissance à des projets complets.
-            </p>
-          </div>
-          <div class="experiments-body">
-            <div class="cards-container"></div>
-          </div>
-        </section>
-        <!-- (4) Section : Applications-->
-        <section id="apps">
-          <div class="apps-header">
-            <h2>Mini-apps ou outils interactifs</h2>
-            <p>
-              Je m’entraîne ici à structurer des applications web simples : todo list, générateur de
-              mots de passe, simulateur interactif…
-              <br />
-              Ces apps sont autonomes, interactives et codées from scratch — parfaites pour faire
-              travailler mon JS dans la vraie vie.
-            </p>
-          </div>
-          <div class="apps-body">
-            <div class="cards-container"></div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <!-- ########## [FOOTER] ########## -->
-    <footer>
-      <div class="footer-content">
-        <!-- Infos de contact -->
-        <div class="contact-info">
-          <p>
-            Contact:
-            <a
-              href="mailto:votre-email@exemple.com"
-              aria-label="Envoyer un email à Jennifer Hauck"
-              role="link"
-            >
-              jenniferhauck2017@gmail.com
-            </a>
-          </p>
-        </div>
-        <!-- Mentions légales et crédits -->
-        <div class="copyright">
-          <p>
-            &copy;
-            <span id="current-year"></span>
-            Jhauck67 - Tous droits réservés
-          </p>
-          <p class="sandbox-credit">
-            Créé avec
-            <span class="accent">Sandbox-Station</span>
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- TITRE : [SCRIPT JS] -->
-    <script type="module" src="./assets/scripts/index.js"></script>
-  </body>
+        <!-- *-----------------------------------
+        *           SCRIPT JS
+        *--------------------------------------->
+        <script type="module" src="./assets/scripts/index.js"></script>
+    </body>
 </html>
+    

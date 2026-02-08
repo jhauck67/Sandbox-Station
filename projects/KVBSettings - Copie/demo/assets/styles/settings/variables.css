@@ -1,0 +1,144 @@
+
+/*§============================================*/
+/*§          DESIGN TOKENS VARIABLES           */
+/*§============================================*/
+
+/** --------------- LES FONTS -----------------*/
+/* Import des fonts : @font-face */
+
+
+@font-face {
+    font-family: 'Bangers';
+    src: url('../../fonts/Bangers-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url('../../fonts/FiraCode-VariableFont_wght.ttf');
+}
+
+
+/* Définition des variables : --font-* */
+:root {
+  --font-logo: 'Bangers', sans-serif;
+  --font-title: 'Bangers', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+  --font-code: 'FiraCode', monospace;
+}
+
+
+/** ------------ COLORS PALETTE ---------------*/
+:root {
+    /* Backgrounds : --color-bg-* */
+    --color-bg-neutral: hsl(122, 5%, 95%);
+    --color-bg-lighter: hsl(122, 10%, 100%);
+    --color-bg-darker: hsl(122, 0%, 90%);
+    --color-bg-accent: hsl(122, 39%, 49%);
+    --color-bg-inverted: hsl(122, 5%, 5%);
+
+    /* Texts : --color-text-* */
+    --color-text-neutral: hsl(122, 5%, 5%);
+    --color-text-lighter: hsl(122, 10%, 10%);
+    --color-text-darker: hsl(122, 0%, 0%);
+    --color-text-onAccent: hsl(122, 5%, 5%);
+    --color-text-primary-accent: hsl(122, 39%, 49%);
+    --color-text-secondary-accent: hsl(122, 64%, 21%);
+    --color-text-inverted: hsl(122, 5%, 95%);
+    --color-text-secondary-accent-inverted: hsl(122, 64%, 51%);
+
+    /* Hovers : --color-hover-* */
+    --color-hover-primary-accent: hsl(122, 49%, 59%);
+    --color-hover-secondary-accent: hsl(122, 74%, 31%);
+    --color-hover-secondary-accent-inverted: hsl(122, 74%, 61%);
+
+    /* Actives : --color-active-* */
+    --color-active-primary-accent: hsl(122, 29%, 39%);
+    --color-active-secondary-accent: hsl(122, 54%, 11%);
+    --color-active-secondary-accent-inverted: hsl(122, 54%, 41%);
+
+    /* Borders & Separators : --color-separator-* & --color-border-* */
+    --color-separator: hsl(122, 64%, 21%, 0.1);
+    --color-separator-inverted: hsl(122, 64%, 51%, 0.1);
+    --color-border: hsl(122, 64%, 21%, 0.3);
+    --color-border-inverted: hsl(122, 64%, 51%, 0.3);
+
+    /* Shadows : --color-shadow-* */
+    --color-shadow-light: 0 1px 2px hsl(122, 5%, 5%, 0.1);
+    --color-shadow-medium: 0 2px 6px hsl(122, 5%, 5%, 0.2);
+    --color-shadow-strong: 0 4px 12px hsl(122, 5%, 5%, 0.3);
+    --color-shadow-light-inverted: 0 1px 2px hsl(122, 5%, 95%, 0.1);
+    --color-shadow-medium-inverted: 0 2px 6px hsl(122, 5%, 95%, 0.2);
+    --color-shadow-strong-inverted: 0 4px 12px hsl(122, 5%, 95%, 0.3);
+
+    /* States : --color-focus & --color-disabled-* */
+    --color-focus: hsl(122, 39%, 69%);
+    --color-disabled-primary: hsl(122, 39%, 49%, 0.4);
+    --color-disabled-secondary: hsl(122, 64%, 21%, 0.4);
+    --color-disabled-secondary-inverted: hsl(122, 64%, 51%, 0.4);
+}
+
+
+/** ---------- FONT SIZES, WEIGHTS ------------*/
+:root {
+  /* Font-sizes : --fs-* */
+  --fs-xxs: 0.625rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 3rem;
+
+  /* Font-weights : --fw-* */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/** --------------- SPACINGS ------------------*/
+:root {
+  /* Spacings : --space-* */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+}
+
+/** -------- BORDER RADIUS & STROKES ----------*/
+:root {
+  /* Border radius : --radius-* */
+  --radius-none: 0;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-pill: 9999px;
+
+  /* Border Width : --border-* */
+  --border-thin: 1px;
+  --border-base: 2px;
+  --border-thick: 4px;
+}
+
+/** -------------- TRANSITIONS ----------------*/
+:root {
+  /* Transitions : --transition-* */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+

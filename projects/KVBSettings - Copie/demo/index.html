@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+    <!-- §---------------------------------------
+    §                [HEAD]
+    §      Titre, Meta Datas et Styles
+    §------------------------------------------->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0C0D0D" />
+
+        <!-- *-----------------------------------
+        *        PAGE META TAGS
+        *--------------------------------------->
+
+        <!-- *--- Balise titre ----------------->
+        <title>KVB Settings</title>
+
+        <!-- *- Meta description --------------->
+        <meta
+            name="description"
+            content="Assistant de calcul des paramètres KVB (Contrôle de Vitesse par Balises) pour la conduite ferroviaire. Cette application web permet aux conducteurs de train d'automatiser la détermination des paramètres à saisir dans l'ordinateur de bord (KVB). À partir des données de masse et de composition du train, l'outil calcule instantanément les quatre réglages critiques"
+        />
+
+        <!-- *-----------------------------------
+        *          OPENGRAPH META TAGS
+        *--------------------------------------->
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="KVB Settings" />
+        <meta
+            property="og:description"
+            content="Assistant de calcul des paramètres KVB (Contrôle de Vitesse par Balises) pour la conduite ferroviaire."
+        />
+        <meta property="og:image" content="assets/img/sketch/opengraph.png" />
+
+        <!-- *-----------------------------------
+        *        FAVICONS SYSTEM
+        *--------------------------------------->
+        <link
+            rel="shortcut icon"
+            href="assets/img/icons/favicons/favicon.ico"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/img/icons/favicons/favicon.svg"
+        />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="assets/img/icons/favicons/favicon32x32.png"
+        />
+        <link
+            rel="icon"
+            sizes="16x16"
+            href="assets/img/icons/favicons/favicon16x16.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="assets/img/icons/favicons/apple-touch-icon.png"
+        />
+
+        <!-- *-----------------------------------
+        *       FEUILLES DE STYLE
+        *--------------------------------------->
+        <link rel="stylesheet" href="./assets/styles/settings/reset.css" />
+        <link rel="stylesheet" href="./assets/styles/settings/variables.css" />
+        <link rel="stylesheet" href="./assets/styles/settings/global.css" />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+
+        <!-- *-----------------------------------
+        *      PRELOAD DES IMAGES
+        *--------------------------------------->
+    </head>
+    <!-- §---------------------------------------
+    §                [BODY]
+    §             Début du site
+    §------------------------------------------->
+    <body>
+        <!-- Formulaire -->
+        <div class="indiceContainer">
+            <label for="indiceCompo">Indice de Composition : </label>
+            <select name="indiceCompo" id="indiceCompo">
+                <option value="MA100">MA 100</option>
+                <option value="MA90">MA 90</option>
+                <option value="MA80">MA 80</option>
+                <option value="ME140">ME 140</option>
+                <option value="ME120">ME 120</option>
+                <option value="ME100">ME 100</option>
+                <option value="HLP">HLP</option>
+                <option value="MANOEUVRE">MANOEUVRE</option>
+            </select>
+        </div>
+        <div class="masseTotaleContainer">
+            <label for="masseTotaleInput">Masse Totale : </label>
+            <input
+                type="number"
+                id="masseTotaleInput"
+                min="0"
+                placeholder="450"
+            /><span> T</span>
+        </div>
+        <div class="MFRContainer">
+            <label for="MFRInput" id="MRFInput">MFR : </label>
+            <input type="number" id="MFRInput" min="0" placeholder="430" />
+            <span> T</span>
+        </div>
+        <div class="longueurContainer">
+            <label for="longueurInput">Longueur du train : </label>
+            <input type="number" id="longueurInput" min="0" placeholder="325" />
+            <span> m</span>
+        </div>
+        <div class="submitContainer">
+            <button type="submit" id="subBtn">Calculer</button>
+        </div>
+        <div class="responseContainer">
+            <div id="trainClass"></div>
+            <div id="trainSpeed"></div>
+            <div id="trainLength"></div>
+            <div id="trainCoef"></div>
+        </div>
+
+        <!-- *-----------------------------------
+        *           SCRIPT JS
+        *--------------------------------------->
+        <script src="./assets/scripts/data.js"></script>
+        <script src="./assets/scripts/index.js"></script>
+    </body>
+</html>

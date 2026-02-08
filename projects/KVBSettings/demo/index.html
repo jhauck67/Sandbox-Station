@@ -78,47 +78,56 @@
     §             Début du site
     §------------------------------------------->
     <body>
-        <!-- Formulaire -->
-        <div class="indiceContainer">
-            <label for="indiceCompo">Indice de Composition : </label>
-            <select name="indiceCompo" id="indiceCompo">
-                <option value="MA100">MA 100</option>
-                <option value="MA90">MA 90</option>
-                <option value="MA80">MA 80</option>
-                <option value="ME140">ME 140</option>
-                <option value="ME120">ME 120</option>
-                <option value="ME100">ME 100</option>
-                <option value="HLP">HLP</option>
-                <option value="MANOEUVRE">MANOEUVRE</option>
-            </select>
-        </div>
-        <div class="masseTotaleContainer">
-            <label for="masseTotaleInput">Masse Totale : </label>
-            <input
-                type="number"
-                id="masseTotaleInput"
-                min="0"
-                placeholder="450"
-            /><span> T</span>
-        </div>
-        <div class="MFRContainer">
-            <label for="MFRInput" id="MRFInput">MFR : </label>
-            <input type="number" id="MFRInput" min="0" placeholder="430" />
-            <span> T</span>
-        </div>
-        <div class="longueurContainer">
-            <label for="longueurInput">Longueur du train : </label>
-            <input type="number" id="longueurInput" min="0" placeholder="325" />
-            <span> m</span>
-        </div>
-        <div class="submitContainer">
-            <button type="submit" id="subBtn">Calculer</button>
-        </div>
-        <div class="responseContainer">
-            <div id="trainClass"></div>
-            <div id="trainSpeed"></div>
-            <div id="trainLength"></div>
-            <div id="trainCoef"></div>
+        <div class="body-container">
+            <h1>KVB Settings</h1>
+            <h2>Données du train</h2>
+            <!-- Formulaire -->
+            <div class="indiceContainer container">
+                <label for="indiceCompo">Indice de Composition : </label>
+                <select name="indiceCompo" id="indiceCompo">
+                    <option value="MA100">MA 100</option>
+                    <option value="MA90">MA 90</option>
+                    <option value="MA80">MA 80</option>
+                    <option value="ME140">ME 140</option>
+                    <option value="ME120">ME 120</option>
+                    <option value="ME100">ME 100</option>
+                    <option value="HLP">HLP</option>
+                    <option value="MANOEUVRE">MANOEUVRE</option>
+                </select>
+            </div>
+            <div class="masseTotaleContainer container">
+                <label for="masseTotaleInput">Masse Totale : </label>
+                <input
+                    type="number"
+                    id="masseTotaleInput"
+                    min="0"
+                    placeholder="450"
+                /><span> T</span>
+            </div>
+            <div class="MFRContainer container">
+                <label for="MFRInput" id="MRFInput">MFR : </label>
+                <input type="number" id="MFRInput" min="0" placeholder="430" />
+                <span> T</span>
+            </div>
+            <div class="longueurContainer container">
+                <label for="longueurInput">Longueur du train : </label>
+                <input
+                    type="number"
+                    id="longueurInput"
+                    min="0"
+                    placeholder="325"
+                />
+                <span> m</span>
+            </div>
+            <div class="submitContainer container">
+                <button type="submit" id="subBtn">Calculer</button>
+            </div>
+            <div class="responseContainer container">
+                <div id="trainClass"></div>
+                <div id="trainSpeed"></div>
+                <div id="trainLength"></div>
+                <div id="trainCoef"></div>
+            </div>
         </div>
 
         <!-- *-----------------------------------

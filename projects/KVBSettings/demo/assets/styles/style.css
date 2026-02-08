@@ -1,0 +1,21 @@
+.body-container {
+    min-height: 100%;
+    margin: var(--space-2xl);
+    text-align: center;
+}
+
+.container {
+    margin: var(--space-sm) auto;
+    width: 60%;
+    text-align: center;
+}
+
+.responseContainer {
+    margin-top: var(--space-3xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    font-family: var(--font-digital);
+    font-size: var(--fs-3xl);
+}

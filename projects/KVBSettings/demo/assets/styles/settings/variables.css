@@ -1,4 +1,3 @@
-
 /*§============================================*/
 /*§          DESIGN TOKENS VARIABLES           */
 /*§============================================*/
@@ -6,31 +5,34 @@
 /** --------------- LES FONTS -----------------*/
 /* Import des fonts : @font-face */
 
-
 @font-face {
-    font-family: 'Bangers';
-    src: url('../../fonts/Bangers-Regular.ttf');
+    font-family: "Bangers";
+    src: url("../../fonts/Bangers-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto-VariableFont_wdth,wght.ttf');
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-VariableFont_wdth,wght.ttf");
 }
 
 @font-face {
-    font-family: 'FiraCode';
-    src: url('../../fonts/FiraCode-VariableFont_wght.ttf');
+    font-family: "FiraCode";
+    src: url("../../fonts/FiraCode-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "DS-DIGI";
+    src: url("../../fonts/DS-DIGI.TTF");
+}
 
 /* Définition des variables : --font-* */
 :root {
-  --font-logo: 'Bangers', sans-serif;
-  --font-title: 'Bangers', sans-serif;
-  --font-text: 'Roboto', sans-serif;
-  --font-code: 'FiraCode', monospace;
+    --font-logo: "Bangers", sans-serif;
+    --font-title: "Bangers", sans-serif;
+    --font-text: "Roboto", sans-serif;
+    --font-code: "FiraCode", monospace;
+    --font-digital: "DS-DIGI", monospace;
 }
-
 
 /** ------------ COLORS PALETTE ---------------*/
 :root {
@@ -82,63 +84,61 @@
     --color-disabled-secondary-inverted: hsl(122, 64%, 51%, 0.4);
 }
 
-
 /** ---------- FONT SIZES, WEIGHTS ------------*/
 :root {
-  /* Font-sizes : --fs-* */
-  --fs-xxs: 0.625rem;
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-md: 1rem;
-  --fs-lg: 1.25rem;
-  --fs-xl: 1.5rem;
-  --fs-2xl: 2rem;
-  --fs-3xl: 3rem;
+    /* Font-sizes : --fs-* */
+    --fs-xxs: 0.625rem;
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 3rem;
 
-  /* Font-weights : --fw-* */
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  --fw-black: 900;
+    /* Font-weights : --fw-* */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
 }
 
 /** --------------- SPACINGS ------------------*/
 :root {
-  /* Spacings : --space-* */
-  --space-2xs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 4rem;
+    /* Spacings : --space-* */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
 }
 
 /** -------- BORDER RADIUS & STROKES ----------*/
 :root {
-  /* Border radius : --radius-* */
-  --radius-none: 0;
-  --radius-xs: 0.125rem;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-pill: 9999px;
+    /* Border radius : --radius-* */
+    --radius-none: 0;
+    --radius-xs: 0.125rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-pill: 9999px;
 
-  /* Border Width : --border-* */
-  --border-thin: 1px;
-  --border-base: 2px;
-  --border-thick: 4px;
+    /* Border Width : --border-* */
+    --border-thin: 1px;
+    --border-base: 2px;
+    --border-thick: 4px;
 }
 
 /** -------------- TRANSITIONS ----------------*/
 :root {
-  /* Transitions : --transition-* */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-medium: 0.3s ease;
-  --transition-slow: 0.5s ease;
+    /* Transitions : --transition-* */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
 }
-

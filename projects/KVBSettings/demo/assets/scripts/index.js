@@ -9,18 +9,28 @@ const longueur = document.getElementById('longueurInput');
 const subBtn = document.getElementById('subBtn');
 
 // Variable : Affichage du résultat
-const trainClass = document.getElementById('trainClass');
-const trainSpeed = document.getElementById('trainSpeed');
-const trainLength = document.getElementById('trainLength');
-const trainCoef = document.getElementById('trainCoef');
+const v1 = document.getElementById('v1');
+const v2 = document.getElementById('v2');
+const l1 = document.getElementById('l1');
+const d1 = document.getElementById('d1');
+const d2 = document.getElementById('d2');
+const d3 = document.getElementById('d3');
+
+const pointer = document.getElementById('pointer');
 
 // Functions                                     
 // Function : Réinitialisation
 const init = () => {
-    trainClass.textContent = '';
-    trainSpeed.textContent = '';
-    trainLength.textContent = '';
-    trainCoef.textContent = '';
+    v1.textContent = '';
+    v2.textContent = '';
+    l1.textContent = '';
+    d1.textContent = '';
+    d2.textContent = '';
+    d3.textContent = '';
+
+    pointer.style.right = '50%';
+    pointer.style.top = '0';
+    pointer.style.transform = 'translateX(50%)';
 };
 
 // Function : Trouver le coefficient de décélération pour la classe "Marchandise"
@@ -38,7 +48,10 @@ const coefMAFunction = () => {
         MFRValue >= colonne
     );
     // On applique la valeur de l'index au tableau de coef de décélération coefKVB
-    trainCoef.textContent = coefKVBMA[index];
+    const coefDec = coefKVBMA[index];
+    d1.textContent = coefDec[0];
+    d2.textContent = coefDec[1];
+    d3.textContent = coefDec[2];
 };
 
 // Function : Check de l'indice de composition
@@ -46,31 +59,50 @@ const checkIndice = () => {
     lengthTransform()
     switch (indiceCompo.value) {
         case 'MA100':
-            trainClass.textContent = 'MA';
-            trainSpeed.textContent = '10';
+            pointer.style.transform = 'rotate(45deg)';
+            pointer.style.top = '12px';
+            pointer.style.right = '12px';
+            v1.textContent = '1';
+            v2.textContent = '0';
             coefMAFunction();
             break;
         case 'MA90':
-            trainClass.textContent = 'MA';
-            trainSpeed.textContent = '09';
+            pointer.style.transform = 'rotate(45deg)';
+            pointer.style.top = '12px';
+            pointer.style.right = '12px';
+            v1.textContent = '0';
+            v2.textContent = '9';
             coefMAFunction();
             break;
         case 'MA80':
-            trainClass.textContent = 'MA';
-            trainSpeed.textContent = '08';
+            pointer.style.transform = 'rotate(45deg)';
+            pointer.style.top = '12px';
+            pointer.style.right = '12px';
+            v1.textContent = '0';
+            v2.textContent = '8';
             coefMAFunction();
             break;
         case 'HLP':
-            trainClass.textContent = 'ME';
-            trainSpeed.textContent = '10';
-            trainLength.textContent = '0';
-            trainCoef.textContent = '057';
+            pointer.style.transform = 'translateX(50%)';
+            pointer.style.top = '0';
+            pointer.style.right = '50%';
+            v1.textContent = '1';
+            v2.textContent = '0';
+            l1.textContent = '0';
+            d1.textContent ='0';
+            d2.textContent ='5';
+            d3.textContent ='7';
             break;
         case 'MANOEUVRE':
-            trainClass.textContent = 'MA';
-            trainSpeed.textContent = '03';
-            trainLength.textContent = '8';
-            trainCoef.textContent = '045';
+            pointer.style.transform = 'rotate(45deg)';
+            pointer.style.top = '12px';
+            pointer.style.right = '12px';
+            v1.textContent = '0';
+            v2.textContent = '3';
+            l1.textContent = '8';
+            d1.textContent ='0';
+            d2.textContent ='4';
+            d3.textContent ='5';
             break;
     
         default:
@@ -81,7 +113,7 @@ const checkIndice = () => {
 // Function : Transformer la longueur à l'hectomètre supérieur
 const lengthTransform = () => {
     const length = Math.ceil(parseInt(longueur.value)/100);
-    trainLength.textContent = length;
+    l1.textContent = length;
 };
 
 // Events Listener                               

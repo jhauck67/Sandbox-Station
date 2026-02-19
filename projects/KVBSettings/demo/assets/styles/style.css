@@ -1,21 +1,115 @@
+/* PARAMETRES GENERAUX */
+
 .body-container {
+    /* Paramètres du body */
+    margin-top: var(--space-md);
+    width: 500px;
     min-height: 100%;
-    margin: var(--space-2xl);
     text-align: center;
 }
 
 .container {
+    /* Container des inputs et du select */
     margin: var(--space-sm) auto;
     width: 60%;
     text-align: center;
 }
 
+label {
+    /*Paramètres des labels */
+    text-decoration: underline;
+}
+input {
+    /* Taille des inputs */
+    width: 60px;
+}
+
+/* VISUALISATEUR KVB */
 .responseContainer {
-    margin-top: var(--space-3xl);
+    /* Conteneur principal du visualisateur */
+    display: grid;
+    width: 95%;
+    margin: var(--space-lg) auto 0;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    justify-content: center;
+}
+.kvbSettingsLeft {
+    display: grid;
+    grid-template-columns: 32% 16% 48%;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+.speed,
+.lenght,
+.deceleration {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-lg);
+    gap: var(--space-2xs);
+}
+.digit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+.digit {
+    border: 1px solid var(--color-border);
+    width: 100%;
+    aspect-ratio: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-digital);
     font-size: var(--fs-3xl);
+    color: var(--color-bg-neutral);
+    background: var(--color-active-secondary-accent);
+}
+.bp {
+    border: 1px solid var(--color-border);
+    background: var(--color-active-primary-accent);
+    width: 45px;
+    height: 15px;
+}
+.kvbSettingsRight {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.regimeContainer {
+    width: 100%;
+    height: 100%;
+}
+.regimeName {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.regimeWheel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(10%);
+}
+.wheel {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border: 1px solid var(--color-border);
+    background: var(--color-active-secondary-accent);
+    border-radius: 50%;
+}
+#pointer {
+    position: absolute;
+    transform: translateX(50%);
+    top: 0;
+    right: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--color-bg-neutral);
 }

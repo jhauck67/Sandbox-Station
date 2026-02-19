@@ -84,49 +84,119 @@
             <!-- Formulaire -->
             <div class="indiceContainer container">
                 <label for="indiceCompo">Indice de Composition : </label>
-                <select name="indiceCompo" id="indiceCompo">
-                    <option value="MA100">MA 100</option>
-                    <option value="MA90">MA 90</option>
-                    <option value="MA80">MA 80</option>
-                    <option value="ME140">ME 140</option>
-                    <option value="ME120">ME 120</option>
-                    <option value="ME100">ME 100</option>
-                    <option value="HLP">HLP</option>
-                    <option value="MANOEUVRE">MANOEUVRE</option>
-                </select>
+                <div class="sous-container">
+                    <select name="indiceCompo" id="indiceCompo">
+                        <option value="MA100">MA 100</option>
+                        <option value="MA90">MA 90</option>
+                        <option value="MA80">MA 80</option>
+                        <option value="ME140">ME 140</option>
+                        <option value="ME120">ME 120</option>
+                        <option value="ME100">ME 100</option>
+                        <option value="HLP">HLP</option>
+                        <option value="MANOEUVRE">MANOEUVRE</option>
+                    </select>
+                </div>
             </div>
             <div class="masseTotaleContainer container">
                 <label for="masseTotaleInput">Masse Totale : </label>
-                <input
-                    type="number"
-                    id="masseTotaleInput"
-                    min="0"
-                    placeholder="450"
-                /><span> T</span>
+                <div class="sous-container">
+                    <input
+                        type="number"
+                        id="masseTotaleInput"
+                        min="0"
+                        placeholder="450"
+                    /><span> T</span>
+                </div>
             </div>
             <div class="MFRContainer container">
                 <label for="MFRInput" id="MRFInput">MFR : </label>
-                <input type="number" id="MFRInput" min="0" placeholder="430" />
-                <span> T</span>
+                <div class="sous-container">
+                    <input
+                        type="number"
+                        id="MFRInput"
+                        min="0"
+                        placeholder="430"
+                    />
+                    <span> T</span>
+                </div>
             </div>
             <div class="longueurContainer container">
                 <label for="longueurInput">Longueur du train : </label>
-                <input
-                    type="number"
-                    id="longueurInput"
-                    min="0"
-                    placeholder="325"
-                />
-                <span> m</span>
+                <div class="sous-container">
+                    <input
+                        type="number"
+                        id="longueurInput"
+                        min="0"
+                        placeholder="325"
+                    />
+                    <span> m</span>
+                </div>
             </div>
             <div class="submitContainer container">
                 <button type="submit" id="subBtn">Calculer</button>
             </div>
-            <div class="responseContainer container">
-                <div id="trainClass"></div>
-                <div id="trainSpeed"></div>
-                <div id="trainLength"></div>
-                <div id="trainCoef"></div>
+            <div class="responseContainer">
+                <div class="kvbSettingsLeft">
+                    <div class="speed-container">
+                        <h2>V</h2>
+                        <div class="speed">
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="v1"></div>
+                                <div class="bp"></div>
+                            </div>
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="v2"></div>
+                                <div class="bp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lenght-container">
+                        <h2>L</h2>
+                        <div class="lenght">
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="l1"></div>
+                                <div class="bp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deceleration-container">
+                        <h2>D</h2>
+                        <div class="deceleration">
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="d1"></div>
+                                <div class="bp"></div>
+                            </div>
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="d2"></div>
+                                <div class="bp"></div>
+                            </div>
+                            <div class="digit-container">
+                                <div class="bp"></div>
+                                <div class="digit" id="d3"></div>
+                                <div class="bp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kvbSettingsRight">
+                    <div class="regimeContainer">
+                        <div class="regimeName">
+                            <h2>VO</h2>
+                            <h2>ME</h2>
+                            <h2>MA</h2>
+                        </div>
+                        <div class="regimeWheel">
+                            <div class="wheel">
+                                <div id="pointer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
